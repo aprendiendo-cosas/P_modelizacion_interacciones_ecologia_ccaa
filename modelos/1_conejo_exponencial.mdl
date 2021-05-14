@@ -1,0 +1,97 @@
+{UTF-8}
+Muertes conejos=
+	Nº conejos*Tasa mortalidad conejos
+	~	conejos/año
+	~		|
+
+Nº conejos= INTEG (
+	Nacimientos conejos-Muertes conejos,
+		100)
+	~	conejos
+	~		|
+
+Nacimientos conejos=
+	Nº conejos*Tasa de natalidad conejos
+	~	conejos/año
+	~		|
+
+Tasa de natalidad conejos=
+	2
+	~	1/año
+	~		|
+
+Tasa mortalidad conejos=
+	0.02
+	~	1/año
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 2040
+	~	año
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 2000
+	~	año
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	año [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.03125
+	~	año [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|72,72,100,0
+10,1,Nº conejos,377,258,40,20,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+12,8,48,95,249,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,10,12,1,4,0,0,22,0,0,0,-1--1--1,,1|(286,243)|
+1,11,12,8,100,0,0,22,0,0,0,-1--1--1,,1|(164,243)|
+11,12,0,230,243,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,13,Nacimientos conejos,230,259,52,8,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,19,48,686,255,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,21,23,19,4,0,0,22,0,0,0,-1--1--1,,1|(614,255)|
+1,22,23,1,100,0,0,22,0,0,0,-1--1--1,,1|(478,255)|
+11,23,0,546,255,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,24,Muertes conejos,546,271,42,8,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,25,Tasa de natalidad conejos,143,357,45,14,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,26,Tasa mortalidad conejos,556,346,42,14,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,29,1,13,1,0,0,0,0,64,0,-1--1--1,,1|(308,304)|
+1,30,25,13,1,0,0,0,0,64,0,-1--1--1,,1|(161,295)|
+1,31,26,24,1,0,0,0,0,64,0,-1--1--1,,1|(580,303)|
+1,32,1,24,1,0,0,0,0,64,0,-1--1--1,,1|(434,332)|
+///---\\\
+:L<%^E!@
+1:Current.vdf
+9:Current
+23:0
+15:0,0,0,0,0,0
+19:100,0
+27:0,
+34:0,
+4:Time
+5:Nº conejos
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+42:0
+24:2000
+25:2040
+26:2040
