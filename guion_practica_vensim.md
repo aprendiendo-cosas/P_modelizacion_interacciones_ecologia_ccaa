@@ -95,9 +95,9 @@ Para aprender los conceptos anteriores, procederemos estudiando los siguientes e
 
 ## Pasos a dar
 Durante la práctica usaremos Vensim para generar modelos de crecimiento poblacional dos especies en varias condiciones:
-+ Empezamos generando un modelo de crecimiento poblacional del conejo. Veremos cómo al contemplar únicamente la tasa de natalidad natural del conejo, el número de individuos crece exponencialmente. Aquí puedes descargar el modelo para Vensim.
-+ A continuación añadiremos depredadores, cuya natalidad está relacionada con la cantidad de conejos. Asimismo, la mortalidad de los conejos está condicionada por la cantidad de depredadores. En este caso se observa un proceso de regulación de las poblaciones de presa y depredador. Aquí puedes descargar el modelo para Vensim.
-+ Por último analizaremos cómo se comportan las poblaciones de depredador y de presa si el crecimiento de este último está también condicionado por la competencia intraespecífica. Aquí puedes descargar el modelo para Vensim.
++ Empezamos generando un modelo de crecimiento poblacional del conejo. Veremos cómo al contemplar únicamente la tasa de natalidad natural del conejo, el número de individuos crece exponencialmente. [Aquí](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/modelos/1_conejo_exponencial.mdl.zip) puedes descargar el modelo para Vensim.
++ A continuación añadiremos depredadores, cuya natalidad está relacionada con la cantidad de conejos. Asimismo, la mortalidad de los conejos está condicionada por la cantidad de depredadores. En este caso se observa un proceso de regulación de las poblaciones de presa y depredador. [Aquí](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/modelos/2_conejo_exponencial_lince_exponencial.mdl.zip) puedes descargar el modelo para Vensim.
++ Por último analizaremos cómo se comportan las poblaciones de depredador y de presa si el crecimiento de este último está también condicionado por la competencia intraespecífica. [Aquí](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/modelos/3_conejo_logistico_lince_exponencial.mdl.zip) puedes descargar el modelo para Vensim.
 
 Para generar los modelos anteriores con Vensim puedes seguir los pasos que se muestran en [este](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/Protocolo_VENSIM.pdf) protocolo. 
 
