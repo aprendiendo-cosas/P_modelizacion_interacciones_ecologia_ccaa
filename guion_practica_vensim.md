@@ -99,7 +99,7 @@ Durante la práctica usaremos Vensim para generar modelos de crecimiento poblaci
 + A continuación añadiremos depredadores, cuya natalidad está relacionada con la cantidad de conejos. Asimismo, la mortalidad de los conejos está condicionada por la cantidad de depredadores. En este caso se observa un proceso de regulación de las poblaciones de presa y depredador. Aquí puedes descargar el modelo para Vensim.
 + Por último analizaremos cómo se comportan las poblaciones de depredador y de presa si el crecimiento de este último está también condicionado por la competencia intraespecífica. Aquí puedes descargar el modelo para Vensim.
 
-Para generar los modelos anteriores con Vensim puedes seguir los pasos que se muestran en este guión. 
+Para generar los modelos anteriores con Vensim puedes seguir los pasos que se muestran en [este](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/Protocolo_VENSIM.pdf) protocolo. 
 
 
 
