@@ -6,7 +6,7 @@
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
 > + **_Duración_**: 2 horas.
 
-![portada](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/imagenes/portada.png)
+![portada](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/2020-2021/imagenes/portada.png)
 
 ## Objetivos
 
@@ -31,7 +31,7 @@ Esta práctica tiene los siguientes objetivos:
 
 ## Contextualización ecológica
 
-El contexto ecológico de esta práctica es la depredación y sus efectos sobre las poblaciones de especies implicadas. [Este](https://aprendiendo-cosas.github.io/Te_depredacion_ecologia_ccaa/guion_depredacion.html) guión muestra los conceptos principales comentados a este respecto durante la asignatura. 
+El contexto ecológico de esta práctica es la depredación y sus efectos sobre las poblaciones de especies implicadas. [Este](https://rawcdn.githack.com/aprendiendo-cosas/Te_depredacion_ecologia_ccaa/2020-2021/guion_depredacion.html) guión muestra los conceptos principales comentados a este respecto durante la asignatura. 
 
 
 ## Modelos basados en procesos
@@ -42,7 +42,7 @@ En el proceso de construcción de un modelo, simpflificamos la realidad y "quita
 
 Sin embargo, al mismo tiempo ocurre que un modelo es tanto mejor cuanto más ajustado está a la realidad. Eso genera un aparente dilema que se resuelve indicando que cuando construimos un modelo establecemos una relación simétrica con la realidad. La siguiente figura muestra esta situación. 
 
-<img src="https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/imagenes/simetria.png" alt="simetria" style="zoom:50%;" />
+<img src="https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/2020-2021/imagenes/simetria.png" alt="simetria" style="zoom:50%;" />
 
 Esta simetría tiene varias implicaciones a efectos prácticos:
 
@@ -95,11 +95,11 @@ Para aprender los conceptos anteriores, procederemos estudiando los siguientes e
 
 ## Pasos a dar
 Durante la práctica usaremos Vensim para generar modelos de crecimiento poblacional dos especies en varias condiciones:
-+ Empezamos generando un modelo de crecimiento poblacional del conejo. Veremos cómo al contemplar únicamente la tasa de natalidad natural del conejo, el número de individuos crece exponencialmente. [Aquí](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/modelos/1_conejo_exponencial.mdl.zip) puedes descargar el modelo para Vensim.
-+ A continuación añadiremos depredadores, cuya natalidad está relacionada con la cantidad de conejos. Asimismo, la mortalidad de los conejos está condicionada por la cantidad de depredadores. En este caso se observa un proceso de regulación de las poblaciones de presa y depredador. [Aquí](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/modelos/2_conejo_exponencial_lince_exponencial.mdl.zip) puedes descargar el modelo para Vensim.
-+ Por último analizaremos cómo se comportan las poblaciones de depredador y de presa si el crecimiento de este último está también condicionado por la competencia intraespecífica. [Aquí](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/modelos/3_conejo_logistico_lince_exponencial.mdl.zip) puedes descargar el modelo para Vensim.
++ Empezamos generando un modelo de crecimiento poblacional del conejo. Veremos cómo al contemplar únicamente la tasa de natalidad natural del conejo, el número de individuos crece exponencialmente. [Aquí](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/2020-2021/modelos/1_conejo_exponencial.mdl.zip) puedes descargar el modelo para Vensim.
++ A continuación añadiremos depredadores, cuya natalidad está relacionada con la cantidad de conejos. Asimismo, la mortalidad de los conejos está condicionada por la cantidad de depredadores. En este caso se observa un proceso de regulación de las poblaciones de presa y depredador. [Aquí](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/2020-2021/modelos/2_conejo_exponencial_lince_exponencial.mdl.zip) puedes descargar el modelo para Vensim.
++ Por último analizaremos cómo se comportan las poblaciones de depredador y de presa si el crecimiento de este último está también condicionado por la competencia intraespecífica. [Aquí](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/2020-2021/modelos/3_conejo_logistico_lince_exponencial.mdl.zip) puedes descargar el modelo para Vensim.
 
-Para generar los modelos anteriores con Vensim puedes seguir los pasos que se muestran en [este](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/Protocolo_VENSIM.pdf) protocolo. 
+Para generar los modelos anteriores con Vensim puedes seguir los pasos que se muestran en [este](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/2020-2021/Protocolo_VENSIM.pdf) protocolo. 
 
 
 
