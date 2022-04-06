@@ -92,7 +92,7 @@ En esta práctica utilizaremos modelos temporalmente explícitos. En dichos mode
 Al igual que usamos los SIG para representar los cambios de ciertas variables ambientales en el domino del espacio, existen herramientas informáticas que nos permiten hacer lo mismo a lo largo del tiempo. Estas herramientas son las que usamos para generar modelos basados en procesos (la palabra proceso lleva implícita la componente temporal). En nuestro caso usaremos dos herramientas:
 + **Vensim** es una potente aplicación que permite simular multitud de situaciones de la realidad (no solo en el ámbito de la ecología, sino también en la ingeniería). Tiene una versión gratuita que puedes descargar [aquí ](https://vensim.com/free-download/#ple)(selecciona PLE y pon un correo. Te enviarán un mensaje con un enlace para descargar el instalable). Es una aplicación muy fácil de usar. Abajo tienes algunas pinceladas para iniciarte en su manejo:
   + [Este](https://youtu.be/itB3IBESny0) vídeo muestra gráficamente lso principales elementos del programa. 
-  + En este documento (preparado por el profesor Diego Jordano Barbudo) puedes ver una descripción detallada de las principales herramientas que usaremos de Vensim. 
+  + En [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/instrucciones_vensim.pdf) documento (preparado por el profesor Diego Jordano Barbudo) puedes ver una descripción detallada de las principales herramientas que usaremos de Vensim. 
   
 + **Stella** es muy parecido al anterior, pero no dispone de versión gratuita. No lo vamos a usar directamente, pero veremos algunos ejemplos de modelos hechos con esta herramienta que están disponibles en internet. 
 
@@ -106,16 +106,8 @@ Además de lo anterior trataremos de evaluar cómo en este proceso cambia la "es
 
 En las siguientes secciones se muestran los distintos estados "evolutivos" de los modelos que iremos trabajando durante la práctica.
 
-
-## Crecimiento exponencial de una población de conejos
-
-
-
-
-
-
-
-
+***
+ESTO ESTÁ COLGADO. VER DÓNDE SE QUEDA:
 
 
 
@@ -123,73 +115,87 @@ En las siguientes secciones se muestran los distintos estados "evolutivos" de lo
   src="https://exchange.iseesystems.com/public/jondarkow/lotka-volterra-predator-prey-model/index.html#page1"
   style="width:100%; height:450px;"
 ></iframe>
-+ 
-  
+>
 
-## Paso a paso
+***
 
-+ **Población de conejos creciendo exponencialmente**
-  
-  1. Creamos un modelo de crecimiento exponencial para el conejo:
-  
-       1.1. Crear variable de estado ("level") llamada *Nº conejos*.
-  
-       1.2. Creamos "tasa" llamada *Nacimientos conejos*. El punto de inicio está a la izquierda de la anterior y finaliza en *Nº conejos.*
-  
-       1.3. Crear variable llamada *Tasa natalidad conejos*
-  
-       1.4 Creamos "tasa" llamada *Muertes conejos*. Empieza en *Nº conejos* y termina a su derecha.
-  
-       1.5. Creamos variable llamada *Tasa mortalidad conejos*.
-  
-       1.6. Mediante flechas conectamos lo siguiente:
-       
-         + *Tasa natalidad conejos* con *Nacimientos conejos*
-         + *Nº conejos* con *Nacimientos conejos*.
-         + *Nº conejos* con *Muertes conejos*.
-         + *Tasa mortalidad conejos* con *Muertes conejos*.
-       
-       1.7. Añadimos las siguientes ecuaciones (botón "equations"):
-       
-         + *Nacimientos conejos = Nº conejos \* Tasa de natalidad conejos*
-         + *Nº conejos = Nacimientos conejos-Muertes conejos*. Número de inicial de conejos= 100
-         + *Muertes conejos = Nº conejos \* Tasa mortalidad conejos*.
-         + *Tasa natalidad conejos* = 2
-         + *Tasa mortalidad conejos* = 0.02
-  
-  2. Guarda el modelo y dale este nombre: *1_conejo_exponencial.mdl*
-  
-  3. Damos nombre a la ejecución: *conejo_exponencial_2_002* y la ejecutamos.
-  
-  4. Vemos la gráfica de evolución del número de conejos.
-  
-  5. Cambiamos la tasas de mortalidad del conejo: 0.05
-  
-  6. Damos nombre a la ejecución: *conejo_exponencial_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué diferencias hay entre las dos gráficas? ¿a qué se deben?
-  
+
+## Crecimiento exponencial de una población de conejos
+
+En esta simulación veremos cómo crece una población sin ningún tipo de relación con el entorno. Aunque sabemos que esto no ocurre en realidad, tiene interés realizarla porque nos permite ver la magnitud de la idea de crecimiento exponencial. Cualquier entidad biológica que crece sin limitación crecerá exponencialmente. Esto ocurre solo en circunstancias en las que un organismo tiene a su disposición recursos ilimitados. 
+
+Para construir el modelo empezamos haciendo lo siguiente:
+1. En el menú "File" crea un nuevo modelo haciendo click en "New Model". eso abrirá una ventana con varias opciones. Completa las siguientes:
+    + Initial time: 2000
+    + Final time: 2040
+    + Time step: indica la duración del lapso de tiempo mínimo que usa el modelo cuando se ejecuta. En nuestro caso usaremos 0.03125. Esto equivale a unos 10 días.
+    + Units for time: Escribe "año".
+
+2. Crear variable de estado ("level") llamada *Nº conejos*.
+
+3. Creamos "tasa" llamada *Nacimientos conejos*. El punto de inicio debe de estar a la izquierda de la anterior y finaliza en *Nº conejos.*
+
+4. Crear variable llamada *Tasa natalidad conejos*
+
+5. Creamos "tasa" llamada *Muertes conejos*. Empieza en *Nº conejos* y termina a su derecha.
+
+6. Creamos variable llamada *Tasa mortalidad conejos*.
+
+7. Mediante flechas conectamos los siguientes elementos:
+
+      + *Tasa natalidad conejos* con *Nacimientos conejos*
+
+      + *Nº conejos* con *Nacimientos conejos*.
+
+      + *Nº conejos* con *Muertes conejos*.
+
+      + *Tasa mortalidad conejos* con *Muertes conejos*.
+
+8. Añadimos las siguientes ecuaciones (botón "equations"):
+
+      + *Nacimientos conejos = Nº conejos \* Tasa de natalidad conejos*
+
+      + *Nº conejos = Nacimientos conejos-Muertes conejos*. Número de inicial de conejos= 100
+
+      + *Muertes conejos = Nº conejos \* Tasa mortalidad conejos*.
+
+      + *Tasa natalidad conejos* = 2
+
+      + *Tasa mortalidad conejos* = 0.02
+
+9. Guarda el modelo y dale este nombre: *1_conejo_exponencial.mdl*. Puedes bajarlo aquí si no has podido construirlo correctamente. 
+
+10. Damos nombre a la ejecución: *conejo_exponencial_2_002* y la ejecutamos.
+
+1. Vemos la gráfica de evolución del número de conejos.
+
+2. Cambiamos la tasas de mortalidad del conejo: 0.05
+
+3. Damos nombre a la ejecución: *conejo_exponencial_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué diferencias hay entre las dos gráficas? ¿a qué se deben?
+
 + **Población de conejos creciendo logísticamente**
   Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este caso la competencia intraespecífica. Esto implica definir la capacidad de carga del sistema. Para ello hemos de crear y/o modificar los siguientes elementos del modelo ya existente:
-  
+
   7. Partiendo del modelo *1_conejo_exponencial.mdl* hacemos lo siguiente:
-  
+
        7.1.  Creamos variable *capacidad de carga* y le damos el valor de 2000 (usando el botón "equations")
        7.2. Conectamos esta nueva variable con *Nacimientos conejos*.
        7.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
-  
+
   2. Damos nombre a la ejecución: *conejo_logistico_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué ves? ¿Por qué?
-  
+
   3. Cerramos sin guardar los cambios.
-  
+
   4. Abrir el modelo creado anteriormente: *1_conejo_exponencial.mdl* y cambiamos el periodo de ejecución del modelo (initial time 2000. Final time 2005).
-  
+
   5. Damos nombre a la ejecución: *conejo_exponencial_2_002* y ejecutamos de nuevo. Vemos la gráfica.
-  
+
   6. Añadimos de nuevo la variable con la capacidad de carga y modificamos la ecuación de *Nacimientos conejos*. Ver punto 7 para más detalles. 
-  
+
   7. Damos nombre a la ejecución: *conejo_logistico_2_002* y ejecutamos. Mostramos la gráfica del número de conejos. Veremos tanto la correspondiente al crecimiento logístico como a la del exponencial. Ahora sí vemos bien las diferencias entre ambas formas de crecimiento poblacional. 
-  
+
   8. Cambia el periódo de ejecución del modelo. Initial time 2000. Final time 2040. 
-  
+
   9. Guardamos el modelo:  *2_conejo_logistico.mdl*
 
 

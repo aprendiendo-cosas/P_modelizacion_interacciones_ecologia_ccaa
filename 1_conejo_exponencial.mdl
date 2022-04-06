@@ -1,0 +1,114 @@
+{UTF-8}
+Muertes conejos=
+	Nº conejos*Tasa mortalidad conejos
+	~	conejos/año
+	~		|
+
+Nº conejos= INTEG (
+	Nacimientos conejos-Muertes conejos,
+		100)
+	~	conejos
+	~		|
+
+Nacimientos conejos=
+	Nº conejos*Tasa natalidad conejos
+	~	conejos/año
+	~		|
+
+Tasa mortalidad conejos=
+	0.02
+	~	1/año
+	~		|
+
+Tasa natalidad conejos=
+	2
+	~	1/año
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 2040
+	~	año
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 2000
+	~	año
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	año [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.03125
+	~	año [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,100,0
+10,1,Nº conejos,388,280,40,20,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+12,8,48,103,274,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,10,12,1,4,0,0,22,0,0,0,-1--1--1,,1|(292,274)|
+1,11,12,8,100,0,0,22,0,0,0,-1--1--1,,1|(168,274)|
+11,12,0,230,274,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,13,Nacimientos conejos,230,290,52,8,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,14,48,715,275,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,16,18,14,4,0,0,22,0,0,0,-1--1--1,,1|(638,275)|
+1,17,18,1,100,0,0,22,0,0,0,-1--1--1,,1|(494,275)|
+11,18,0,566,275,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,19,Muertes conejos,566,291,42,8,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,20,Tasa natalidad conejos,136,374,56,8,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,21,Tasa mortalidad conejos,532,368,42,14,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,22,20,13,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
+1,23,1,13,1,0,0,0,0,64,0,-1--1--1,,1|(314,327)|
+1,24,1,19,1,0,0,0,0,64,0,-1--1--1,,1|(456,311)|
+1,25,21,19,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
+///---\\\
+:L<%^E!@
+5:Tasa mortalidad conejos
+9:current
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:0
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Times New Roman|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
