@@ -167,94 +167,102 @@ Para construir el modelo empezamos haciendo lo siguiente:
 
 10. Damos nombre a la ejecución: *conejo_exponencial_2_002* y la ejecutamos.
 
-11. La gráfica obtenida debe de ser algo parecido a lo que ves abajo. 
+11. La gráfica obtenida debe de ser algo parecido a lo que ves abajo. ¿Cómo de rápido crece el número de conejos?, ¿por qué da la sensación de que solo crece a partir del año 2036?, ¿Cuántos conejos hay en el año 2020?. Para contestar a esta última pregunta puedes ver la tabla de datos generada por el modelo. Para ello basta con seleccionar la variable de estado *Nº conejos* y luego el botón "Table".
 
-![conejo_exponencial_2_002]()
-
-
+![conejo_exponencial_2_002](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/imagenes/conejo_exponencial_2_002.png)
 
 
 
+12. Cambiamos la tasas de mortalidad del conejo: 0.05
+13. Damos nombre a la ejecución: *conejo_exponencial_2_005* y la ejecutamos. Vemos la gráfica del número de conejos (la tienes abajo). ¿Qué diferencias hay entre las dos gráficas? ¿a qué se deben?
+
+![conejo_exponencial_2_005](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/imagenes/conejo_exponencial_2_005.png)
 
 
-1. Cambiamos la tasas de mortalidad del conejo: 0.05
+## Crecimiento logístico de una población de conejos
 
-2. Damos nombre a la ejecución: *conejo_exponencial_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué diferencias hay entre las dos gráficas? ¿a qué se deben?
+Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este caso la competencia intraespecífica. Esto implica definir la capacidad de carga del sistema. Al contemplar este tipo de interacción veremos cómo el crecimiento exponencial pasa a ser logístico. Para ello hemos de crear y/o modificar los siguientes elementos del modelo ya existente:
 
-+ **Población de conejos creciendo logísticamente**
-  Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este caso la competencia intraespecífica. Esto implica definir la capacidad de carga del sistema. Para ello hemos de crear y/o modificar los siguientes elementos del modelo ya existente:
+14. Partiendo del modelo *1_conejo_exponencial.mdl* hacemos lo siguiente:
+    14.1. Creamos variable *capacidad de carga* y le damos el valor de 2000 (usando el botón "equations").
+    14.2. Conectamos esta nueva variable con *Nacimientos conejos*.
+    14.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
 
-  7. Partiendo del modelo *1_conejo_exponencial.mdl* hacemos lo siguiente:
+  15. Damos nombre a la ejecución: *conejo_logistico_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué ves? ¿Por qué?
+  16. Cerramos sin guardar los cambios.
+  17. Abrir el modelo creado anteriormente: *1_conejo_exponencial.mdl* y cambiamos el periodo de ejecución del modelo (initial time 2000. Final time 2005).
+  18. Damos nombre a la ejecución: *conejo_exponencial_2_002* y ejecutamos de nuevo. Vemos la gráfica.
+  19. Añadimos de nuevo la variable con la capacidad de carga y modificamos la ecuación de *Nacimientos conejos*. Ver punto 7 para más detalles. 
+  20. Damos nombre a la ejecución: *conejo_logistico_2_002* y ejecutamos. Mostramos la gráfica del número de conejos. Veremos tanto la correspondiente al crecimiento logístico como a la del exponencial. Ahora sí vemos bien las diferencias entre ambas formas de crecimiento poblacional. 
+  21. Cambia el periódo de ejecución del modelo. Initial time 2000. Final time 2040. 
+  22. Guardamos el modelo:  *2_conejo_logistico.mdl*
 
-       7.1.  Creamos variable *capacidad de carga* y le damos el valor de 2000 (usando el botón "equations")
-       7.2. Conectamos esta nueva variable con *Nacimientos conejos*.
-       7.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
+## Comunidad con dos especies y depredación: linces depredando conejos y conejos creciendo exponencialmente (sin competencia intraespecífica)**
 
-  2. Damos nombre a la ejecución: *conejo_logistico_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué ves? ¿Por qué?
+16. Abrimos el modelo *1_conejo_exponencial.mdl*
 
-  3. Cerramos sin guardar los cambios.
+17. Incorporalos los siguientes elementos: 
+    
 
-  4. Abrir el modelo creado anteriormente: *1_conejo_exponencial.mdl* y cambiamos el periodo de ejecución del modelo (initial time 2000. Final time 2005).
-
-  5. Damos nombre a la ejecución: *conejo_exponencial_2_002* y ejecutamos de nuevo. Vemos la gráfica.
-
-  6. Añadimos de nuevo la variable con la capacidad de carga y modificamos la ecuación de *Nacimientos conejos*. Ver punto 7 para más detalles. 
-
-  7. Damos nombre a la ejecución: *conejo_logistico_2_002* y ejecutamos. Mostramos la gráfica del número de conejos. Veremos tanto la correspondiente al crecimiento logístico como a la del exponencial. Ahora sí vemos bien las diferencias entre ambas formas de crecimiento poblacional. 
-
-  8. Cambia el periódo de ejecución del modelo. Initial time 2000. Final time 2040. 
-
-  9. Guardamos el modelo:  *2_conejo_logistico.mdl*
-
-
-
-+ **Comunidad con dos especies y depredación: linces depredando conejos y conejos creciendo exponencialmente (sin competencia intraespecífica)**
-
-  16. Abrimos el modelo *1_conejo_exponencial.mdl*
-
-  17. Incorporalos los siguientes elementos: 
+17.1. Crear variable de estado ("level") llamada *Nº linces*.
+17.2. Creamos "tasa" llamada *Nacimientos linces*. El punto de inicio está a la izquierda de la anterior y finaliza en *Nº linces.*
       
-      17.1. Crear variable de estado ("level") llamada *Nº linces*.
+17.3. Crear variable llamada *Tasa natalidad linces*
       
-      17.2. Creamos "tasa" llamada *Nacimientos linces*. El punto de inicio está a la izquierda de la anterior y finaliza en *Nº linces.*
+17.4 Creamos "tasa" llamada *Muertes linces*. Empieza en *Nº linces* y termina a su derecha.
       
-      17.3. Crear variable llamada *Tasa natalidad linces*
+17.5. Creamos variable llamada *Tasa mortalidad linces*.
       
-      17.4 Creamos "tasa" llamada *Muertes linces*. Empieza en *Nº linces* y termina a su derecha.
+17.6. Mediante flechas conectamos lo siguiente:
       
-      17.5. Creamos variable llamada *Tasa mortalidad linces*.
++ *Tasa natalidad linces* con *Nacimientos linces*
++ *Nº linces* con *Nacimientos linces*.
++ *Nº linces* con *Muertes linces*.
++ *Tasa mortalidad linces* con *Muertes linces*.
       
-      17.6. Mediante flechas conectamos lo siguiente:
+17.7. Añadimos las siguientes ecuaciones (botón "equations"):
       
-        + *Tasa natalidad linces* con *Nacimientos linces*
-        + *Nº linces* con *Nacimientos linces*.
-        + *Nº linces* con *Muertes linces*.
-        + *Tasa mortalidad linces* con *Muertes linces*.
-      
-      17.7. Añadimos las siguientes ecuaciones (botón "equations"):
-      
-        + *Nacimientos linces = Nº linces \* Tasa de natalidad linces*
-        + *Nº linces = Nacimientos linces-Muertes linces*. Número de inicial de linces= 100
-        + *Muertes linces = Nº linces \* Tasa mortalidad linces*.
-        + *Tasa natalidad linces* = 0.01
-        + *Tasa mortalidad linces* = 0.6
-      
++ *Nacimientos linces = Nº linces \* Tasa de natalidad linces*
++ *Nº linces = Nacimientos linces-Muertes linces*. Número de inicial de linces= 100
++ *Muertes linces = Nº linces \* Tasa mortalidad linces*.
++ *Tasa natalidad linces* = 0.01
++ *Tasa mortalidad linces* = 0.6
+
   18. Además, debemos de relacionar las dinámicas poblacionales de ambas especies a través de la depredación. Lo veremos con más detalle en las sesiones de teoría, pero asumiremos que el número de linces afecta (negativamente) a la mortandad de los conejos y que el número de conejos afecta (positivamente) al nacimiento de los linces. En términos del modelo de Vensim, esto implica:
       + Añadir flecha desde *Nº conejos* hasta *Nacimientos linces*
       + Modificar la ecuación de *Nacimientos linces* así: *Nº linces \* Tasa de natalidad linces \* Nº conejos*
       + Añadir flecha desde *Nº linces* hasta *Muertes conejos"
       + Modificar la ecuación de *Muertes conejos* así: *Nº conejos \* Tasa mortalidad conejos \* Nº linces*
   19. Guardamos el modelo con este nombre: *3_conejo_exponencial_lince.mdl*
-  20. Nombramos la ejecución: *conejo_exp_lince* y la ejecutamos. Mostramos las gráficas de *Nº conejos* y *Nº linces* . ¿Cómo se interpretan las gráficas obtenidas? ¿qué diferencias ves respecto a las del modelo anterior?
 
-+ **Comunidad con dos especies y depredación: linces depredando conejos y conejos creciendo logísticamente (con competencia intraespecífica)**
-  
-  21. Partimos del modelo anterior (*3_conejo_exponencial_lince.mdl*) sobre el que incoraremos el "freno" provocado por la competencia intraespecífica: capacidad de carga del medio los conejos:
-       21.1.  Creamos variable *capacidad de carga conejos* y le damos el valor de 2000 (usando el botón "equations")
-      21.2. Conectamos esta nueva variable con *Nacimientos conejos*.
-      21.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
-  22. Damos nombre a la ejecución: *conejo_log_lince* y la ejecutamos. Vemos la gráfica del número de conejos y de linces. Puedes comparar los resultados de este modelo (con competencia intraespecífica para el conejo) con los del anterior (sin competencia intraespecífica). ¿cuál de las dos situaciones consideras que es más "estable"?
-  23. Guardamos este nuevo modelo: *4_conejo_logistico_lince.mdl*
+20. Nombramos la ejecución: *conejo_exp_lince* y la ejecutamos. Mostramos las gráficas de *Nº conejos* y *Nº linces* . ¿Cómo se interpretan las gráficas obtenidas? ¿qué diferencias ves respecto a las del modelo anterior?
 
-+ **Comunidad de tres especies (depredación y competencia interespecífica): linces y águilas depredando conejos**
+## Comunidad con dos especies y depredación: linces depredando conejos y conejos creciendo logísticamente (con competencia intraespecífica)
+
+21. Partimos del modelo anterior (*3_conejo_exponencial_lince.mdl*) sobre el que incoraremos el "freno" provocado por la competencia intraespecífica: capacidad de carga del medio los conejos:
+21.1.  Creamos variable *capacidad de carga conejos* y le damos el valor de 2000 (usando el botón "equations")
+21.2. Conectamos esta nueva variable con *Nacimientos conejos*.
+21.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
+22. Damos nombre a la ejecución: *conejo_log_lince* y la ejecutamos. Vemos la gráfica del número de conejos y de linces. Puedes comparar los resultados de este modelo (con competencia intraespecífica para el conejo) con los del anterior (sin competencia intraespecífica). ¿cuál de las dos situaciones consideras que es más "estable"?
+23. Guardamos este nuevo modelo: *4_conejo_logistico_lince.mdl*
+
+
+## Comunidad con dos especies y depredación: depredador y presa. Ambos pueden ser cazados
+
+Esta ocasión no construiremos ningún modelo, sino que usaremos uno existente. Está disponible en [esta](https://exchange.iseesystems.com/public/creativelearningexchange/predator-prey-biomass-levelc/index.html#page1) web. Analizaremos las consecuencias que tiene la caza de depredadores y de presas en este sistema.
+
+## Comunidad con dos especies que compiten entre sí y con un depredador. Concepto de nicho ecológico.
+
+Aquí abordaremos la competencia interespecífica, que aún no hemos visto en las clases de teoría. Puedes ver el guión con los conceptos más importantes (aquí)[https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/2020-2021/guion_competencia_interespecifica.html]. 
+
+Estudiaremos el impacto que tiene la competencia interespecífica en una comunidad de crustaceos en un ambiente intermareal. Usaremos un modelo disponible en (esta)[http://virtualbiologylab.org/ModelsHTML5/BarnacleCompetition/BarnacleCompetitionModel.html] web.
+
+Haremos los siguientes experimentos:
++ Eliminar *Chthamalus* del área superior. Ejecutar el modelo y anotar el resultado después de 50 días. ¿qué ocurre?, ¿reemplaza *Balanus* a la especie eliminada?, ¿Por qué?
++ Ahora elimina todos los *Balanus*. Ejecutar el modelo y anotar el resultado después de 50 días. ¿qué ocurre? , ¿reemplaza *Chthalamalus* a *Balanus*?, ¿por qué?
++ Ahora añadiremos depredadores (*Thais*). ¿Qué ocurre transcurridos 50 días?, 
++ ¿Cuál de las dos especies estudiadas tiene un nicho realizado más grande?
+
+
+## Comunidad con multitud de especies. Efecto de la depredación en el sistema. Cascadas tróficas.
 
