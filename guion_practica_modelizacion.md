@@ -1,10 +1,10 @@
-# Instrucciones para realizar la práctica denominada "Construcción de modelos basados en procesos usando Vensim"
+# Guión para realizar la práctica denominada "Modelización de las interacciones ecológicas. Desde el crecimiento exponencial hasta las cascadas tróficas"
 
 
 > + **_Versión_**: 2021-2022
 > + **_Asignatura (grado)_**: Ecología (Ciencias ambientales). Curso 2020-2021
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
-> + **_Duración_**: 3 horas.
+> + **_Duración_**: Dos sesiones 3 horas cada una.
 
 ![portada](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/2020-2021/imagenes/portada.png)
 
@@ -12,18 +12,21 @@
 
 Esta práctica tiene los siguientes objetivos:
 + Disciplinares:
-  + Reforzar el conocimiento adquirido sobre dinámicas poblacionales de presas y depredadores.
-  
+  + Reforzar el conocimiento adquirido sobre los siguientes aspectos de poblaciones y comunidades:
+    + Dinámicas poblacionales en ausencia de interacciones ecológicas (crecimiento exponencial).
+    + Dinámicas poblacionales considerando la competencia intraespecífica (crecimiento logístico).
+    + Relaciones entre depredadores y presas e implicaciones sobre sus dinámicas poblacionales.
+    + Relaciones entre especies que compiten por los mismos recursos.
+    + Consecuencias de las relaciones anteriores en el ensamblaje de comunidades reales.
   + Constatar el efecto de la retroalimentación negativa y positiva en las interacciones presa-depredador.
-  
   + Constatar cómo la homeostasis es una propiedad emergente cuando interactúan presas y depredadores.
-  
-  + Comprobar el efecto de la incorporación de factores (competencia intraespecífica, depredación) cuando simulamos el crecimiento de poblaciones de presa.
-  
 + Instrumentales:
 
   + Aprender el concepto de modelo basado en procesos.
-  + Distinguirlo de los modelos espacialmente explícitos.
+    + Concepto de variable de estado.
+    + Concepto de parámetro de un modelo.
+    + Conceptos de ejecución y lapso de tiempo.
+  + Distinguirlos de los modelos espacialmente explícitos.
   + Conocer el funcionamiento de Vensim como herramienta para realizar modelos basados en procesos. 
 
 
@@ -31,7 +34,14 @@ Esta práctica tiene los siguientes objetivos:
 
 ## Contextualización ecológica
 
-El contexto ecológico de esta práctica es la depredación y sus efectos sobre las poblaciones de especies implicadas. [Este](https://rawcdn.githack.com/aprendiendo-cosas/Te_depredacion_ecologia_ccaa/2020-2021/guion_depredacion.html) guión muestra los conceptos principales comentados a este respecto durante la asignatura. 
+El contexto ecológico de esta práctica es el bloque de temas de teoría en los que abordamos la dinámica poblacional y las interacciones interespecíficas. En concreto, para entender bien lo que hacemos aquí deberás estar familiarizado con los siguientes temas:
+
++ [Aspectos generales sobre poblaciones ecológicas.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_ecologia_ccaa/2021_2022/guion_poblaciones_general.html)
++ [Competencia intraespecífica.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_comp_intra_ecologia_ccaa/2021-2022/guion_competencia_intraespecifica.html)
++ [Interacciones ecológicas. Depredación.](https://rawcdn.githack.com/aprendiendo-cosas/Te_depredacion_ecologia_ccaa/2021-2022/guion_depredacion.html) En clase vimos solo la parte "teórica" de este tema. En el guión tienes todo el material.
++ [Interacciones ecológicas](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/2021-2022/guion_competencia_interespecifica.html). Competencia interespecífica. 
+
+
 
 
 ## Modelos basados en procesos
@@ -61,37 +71,60 @@ Hay muchos tipos de modelos diferentes, pero en nuestro caso, solo haremos refer
 + Modelos espacialmente explícitos: entre las variables que se contemplan está el espacio. Estos modelos permiten simular cómo se distribuye en el espacio una o varias variables. Es decir, contemplan el espacio y sus dimensiones. Los SIG o los mapas son modelos espacialmente explícitos. 
 + Modelos temporalmente explícitos: En este caso los modelos tienen en cuenta el transcurrir del tiempo, así que nos permiten conocer cómo cambian las variables simuladas en el dominio del tiempo.  ¿Qué modelos temporalmente explícitos hemos visto muchas veces a lo largo de la asignatura?
 
+En esta práctica utilizaremos modelos temporalmente explícitos. En dichos modelos los procesos ocurren en el eje del tiempo (y no en el del espacio). Eso hace que durante su ejecución veamos cómo cambia a lo largo del tiempo el valor numérico de una o varias variables importantes para la comunidad estudiada. Para entender la estructura de los modelos que vamos a usar, es necesario definir una serie de conceptos: 
 
-
-## Un ejemplo de modelo para simular la dinámica depredador-presa
-
-
-
-En esta práctica simularemos cómo cambian las poblaciones de depredador y de presas cuando interactúan. Veremos en acción los siguientes conceptos:
-
-+ Retroalimentación positiva: a más presas más depredador.
-+ Retroalimentación negativa: a más depredador menos presas.
-+ Homeostasis resultante de la combinación de ambas retroalimentaciones.
-
-En primer lugar trabajaremos con un modelo muy sencillo:
-
-<iframe
-  src="https://exchange.iseesystems.com/public/jondarkow/lotka-volterra-predator-prey-model/index.html#page1"
-  style="width:100%; height:450px;"
-></iframe>
-
-Para aprender los conceptos anteriores, procederemos estudiando los siguientes elementos:
 + Variables del modelo. 
-  + Variables de estado. Cambian en cada ejecución del modelo en cada lapso de tiempo. 
+  + Variables de estado. Cambian en cada ejecución del modelo en cada lapso de tiempo. Se refieren a los descriptores del sistema cuya variación a lo largo del tiempo nos interesa conocer. Por ejemplo:
     + 	Nº de presas en tiempo t
     + 	Nº de depredadores en tiempo t
-    + 	En Vensim se usa una metáfora: el depósito. A más nivel del depósito, más alto es el valor numérico de la variable de estado.
+    + 	En el software que utilizaremos  se usa una metáfora: el depósito. A más nivel del depósito, más alto es el valor numérico de la variable de estado.
   + Parámetros del modelo. Se mantienen constantes durante la ejecución del modelo. Podemos cambiarlos pero los valores que toman se aplican a toda la ejecución del modelo. Es decir, cambian de ejecución en ejecución.
     + 	Tasa de natalidad.
     + 	Tasa de mortalidad.
     + 	Número inicial de presas y depredadores.
 
 + Matemáticas subyacentes: ecuaciones diferenciales. Estas herramientas nos permiten cuantificar cómo cambian las variables de estado en cada diferencial de tiempo. 
+
+
+
+## Software para construir modelos
+
+Al igual que usamos los SIG para representar los cambios de ciertas variables ambientales en el domino del espacio, existen herramientas informáticas que nos permiten hacer lo mismo a lo largo del tiempo. Estas herramientas son las que usamos para generar modelos basados en procesos (la palabra proceso lleva implícita la componente temporal). En nuestro caso usaremos dos herramientas:
++ **Vensim** es una potente aplicación que permite simular multitud de situaciones de la realidad (no solo en el ámbito de la ecología, sino también en la ingeniería). Tiene una versión gratuita que puedes descargar [aquí ](https://vensim.com/free-download/#ple)(selecciona PLE y pon un correo. Te enviarán un mensaje con un enlace para descargar el instalable). Es una aplicación muy fácil de usar. Abajo tienes algunas pinceladas para iniciarte en su manejo:
+  + [Este](https://youtu.be/itB3IBESny0) vídeo muestra gráficamente lso principales elementos del programa. 
+  + En este documento (preparado por el profesor Diego Jordano Barbudo) puedes ver una descripción detallada de las principales herramientas que usaremos de Vensim. 
+  
++ **Stella** es muy parecido al anterior, pero no dispone de versión gratuita. No lo vamos a usar directamente, pero veremos algunos ejemplos de modelos hechos con esta herramienta que están disponibles en internet. 
+
+ 
+
+## Secuencia de acciones de la práctica
+
+Durante las dos sesiones de tres horas que dura esta práctica iremos comprobando cómo se "construye" una comunidad ecológica paso a paso. Utilizaremos una metáfora parecida a la que aplicamos cuando hicimos nuestra primera comunidad ecológica con [bolas de corcho](https://rawcdn.githack.com/aprendiendo-cosas/Te_comunidades_diversidad_ecologia_ccaa/2021_2022/guion_comunidades_diversidad.html). En este proceso iremos complicando la comunidad poco a poco. Partiremos de una población de una única especie que crece exponencialmente. Luego veremos cómo evoluciona esa población si añadimos competencia intraespecífica. Añadiremos más especies que interactúan de diferentes maneras: unas depredan a otras y unas compiten con otras. En todos los casos analizaremos mediante modelos de procesos cómo las interacciones modifican la dinámica poblacional. 
+
+Además de lo anterior trataremos de evaluar cómo en este proceso cambia la "estabilidad" del sistema. Consideraremos que un sistema ecológico es tanto más estable cuanto menos cambian a lo largo del tiempo las abundancias de las poblaciones que lo constituyen. Las grandes oscilaciones en los números poblacionales suelen aumentar el riesgo de extinción de las poblaciones. Trataremos de evaluar de manera visual la estabilidad de las comunidades que simularemos en esta práctica.
+
+En las siguientes secciones se muestran los distintos estados "evolutivos" de los modelos que iremos trabajando durante la práctica.
+
+
+## Crecimiento exponencial de una población de conejos
+
+
+
+
+
+
+
+
+
+
+
+<iframe
+  src="https://exchange.iseesystems.com/public/jondarkow/lotka-volterra-predator-prey-model/index.html#page1"
+  style="width:100%; height:450px;"
+></iframe>
++ 
+  
 
 ## Paso a paso
 
