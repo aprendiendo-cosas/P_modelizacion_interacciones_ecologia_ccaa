@@ -163,15 +163,23 @@ Para construir el modelo empezamos haciendo lo siguiente:
 
       + *Tasa mortalidad conejos* = 0.02
 
-9. Guarda el modelo y dale este nombre: *1_conejo_exponencial.mdl*. Puedes bajarlo aquí si no has podido construirlo correctamente. 
+9. Guarda el modelo y dale este nombre: *1_conejo_exponencial.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/1_conejo_exponencial.mdl.zip) si no has podido construirlo correctamente. 
 
 10. Damos nombre a la ejecución: *conejo_exponencial_2_002* y la ejecutamos.
 
-1. Vemos la gráfica de evolución del número de conejos.
+11. La gráfica obtenida debe de ser algo parecido a lo que ves abajo. 
 
-2. Cambiamos la tasas de mortalidad del conejo: 0.05
+![conejo_exponencial_2_002]()
 
-3. Damos nombre a la ejecución: *conejo_exponencial_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué diferencias hay entre las dos gráficas? ¿a qué se deben?
+
+
+
+
+
+
+1. Cambiamos la tasas de mortalidad del conejo: 0.05
+
+2. Damos nombre a la ejecución: *conejo_exponencial_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué diferencias hay entre las dos gráficas? ¿a qué se deben?
 
 + **Población de conejos creciendo logísticamente**
   Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este caso la competencia intraespecífica. Esto implica definir la capacidad de carga del sistema. Para ello hemos de crear y/o modificar los siguientes elementos del modelo ya existente:
