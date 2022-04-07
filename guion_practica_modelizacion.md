@@ -220,6 +220,7 @@ Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este
 + *Nº linces* con *Muertes linces*.
 + *Tasa mortalidad linces* con *Muertes linces*.
       
+
 17.7. Añadimos las siguientes ecuaciones (botón "equations"):
       
 + *Nacimientos linces = Nº linces \* Tasa de natalidad linces*
@@ -253,16 +254,24 @@ Esta ocasión no construiremos ningún modelo, sino que usaremos uno existente. 
 
 ## Comunidad con dos especies que compiten entre sí y con un depredador. Concepto de nicho ecológico.
 
-Aquí abordaremos la competencia interespecífica, que aún no hemos visto en las clases de teoría. Puedes ver el guión con los conceptos más importantes (aquí)[https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/2020-2021/guion_competencia_interespecifica.html]. 
+Aquí abordaremos la competencia interespecífica, que aún no hemos visto en las clases de teoría. Puedes ver el guión con los conceptos más importantes [aquí](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/2020-2021/guion_competencia_interespecifica.html). 
 
-Estudiaremos el impacto que tiene la competencia interespecífica en una comunidad de crustaceos en un ambiente intermareal. Usaremos un modelo disponible en (esta)[http://virtualbiologylab.org/ModelsHTML5/BarnacleCompetition/BarnacleCompetitionModel.html] web.
+Estudiaremos el impacto que tiene la competencia interespecífica en una comunidad de crustaceos en un ambiente intermareal. Usaremos un modelo disponible en [esta](http://virtualbiologylab.org/ModelsHTML5/BarnacleCompetition/BarnacleCompetitionModel.html) web.
 
 Haremos los siguientes experimentos:
 + Eliminar *Chthamalus* del área superior. Ejecutar el modelo y anotar el resultado después de 50 días. ¿qué ocurre?, ¿reemplaza *Balanus* a la especie eliminada?, ¿Por qué?
 + Ahora elimina todos los *Balanus*. Ejecutar el modelo y anotar el resultado después de 50 días. ¿qué ocurre? , ¿reemplaza *Chthalamalus* a *Balanus*?, ¿por qué?
 + Ahora añadiremos depredadores (*Thais*). ¿Qué ocurre transcurridos 50 días?, 
 + ¿Cuál de las dos especies estudiadas tiene un nicho realizado más grande?
+  + Según hemos isto, ¿qué pasaría si eliminarámos todos los *Balanus* e impidiésemos su reprodución? ¿Y si hacemos lo mismo con "*Chthalamadus*".
+
+
 
 
 ## Comunidad con multitud de especies. Efecto de la depredación en el sistema. Cascadas tróficas.
 
+Este último ejemplo muestra el funcionamiento de una comunidad ecológica en su conjunto. Pero lo hace de una forma muy poco recomendable: eliminando una parte importante de la misma. Me explico. La complejidad de los sistemas ecológicos es tal que mucha veces aprendemos de ellos cuando conocemos las consecuencias de su malfuncionamiento. Es como si aprendiéramos la mecánica de un coche intentando usarlo después de quitarle alguna pieza. Para saber la utilidad del freno, por ejemplo, no hay nada más útil que romperlo y tratar de conducir. Esto suena un poco desabellado, pero esta "táctica" se ha usado muchas veces de manera no deliberada.
+
+El ejemplo que nos ocupa es un caso claro de esta situación. A finales del siglo XX aprendimos la importancia crítica que tienen los depredadores en los ecosistemas. Y lo hicimos cuando constatamos cómo cambiaba el sistema en su conjunto al reintroducir un gran depredador en un territorio del que fue erradicado décadas antes. Al conjunto de alteraciones que, en un territorio determinado, provoca la erradicación de un depreador apical (el que está en la "cumbre" de la red trófica), se le denomina cascada trófica. 
+
+[Este](https://www.youtube.com/watch?v=ysa5OBhXz-Q) vídeo muestra el primer ejemplo de cascada trófica que conocimos. Ocurrió en los años 90 del siglo pasado en el parque nacional de Yellowstone. En esta presentación tienes más información sobre este fenómeno, así como otro ejemplo en Australia. 
