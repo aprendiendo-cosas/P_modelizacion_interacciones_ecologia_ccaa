@@ -37,7 +37,7 @@ El contexto ecológico de esta práctica es el bloque de temas de teoría en los
 + [Aspectos generales sobre poblaciones ecológicas.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_ecologia_ccaa/2021_2022/guion_poblaciones_general.html)
 + [Competencia intraespecífica.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_comp_intra_ecologia_ccaa/2021-2022/guion_competencia_intraespecifica.html)
 + [Interacciones ecológicas. Depredación.](https://rawcdn.githack.com/aprendiendo-cosas/Te_depredacion_ecologia_ccaa/2021-2022/guion_depredacion.html) En clase vimos solo la parte "teórica" de este tema. En el guión tienes todo el material.
-+ [Interacciones ecológicas](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/2021-2022/guion_competencia_interespecifica.html). Competencia interespecífica. 
++ [Interacciones ecológicas. Competencia interespecífica](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/2021-2022/guion_competencia_interespecifica.html). Competencia interespecífica. 
 
 
 ## Modelos basados en procesos
@@ -242,6 +242,8 @@ El ejemplo que nos ocupa es un caso claro de esta situación. A finales del sigl
 
 Aquí puedes ver los resultados que, por ahora, arroja [esta](https://docs.google.com/forms/d/e/1FAIpQLScbCKaNkzzjV5bH0yek41FO-KS7LtLhT_ilITS_ZR0Z2XJyCA/viewform?usp=sf_link) encuesta sobre grado de satisfacción de los objetivos planteados. Por favor, rellénala si no lo has hecho ya. Se tardan 10 segundos y sus resultados son de gran utilidad para mejorar los contenidos cada año. Gracias.
 
-<img src="https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/imagenes/cumplimiento_objetivos.png" alt="image" style="zoom:50%;" />
++ Primera sesión
 
-<img src="https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/imagenes/desempenio_profesor.png" alt="image" style="zoom:50%;" />
+<img src="https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/imagenes/cumplimiento_objetivos_1.png" alt="image" style="zoom:50%;" />
+
+<img src="https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/imagenes/desempenio_profesor_1.png" alt="image" style="zoom:50%;" />
