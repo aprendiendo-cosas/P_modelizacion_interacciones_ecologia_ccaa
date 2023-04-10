@@ -228,6 +228,7 @@ Haremos los siguientes experimentos en el modelo anterior:
 
 
 
+**MOVER TODO ESTO DE LA CASCADA TRÓFICA A LA SESIÓN TEÓRICA DE PRODUCCIÓN SECUNDARIA. ALLÍ YA SE HABLA DE REGULACIÓN TOP-DOWN**
 
 ## Comunidad con multitud de especies. Efecto de la depredación en el sistema. Cascadas tróficas.
 
