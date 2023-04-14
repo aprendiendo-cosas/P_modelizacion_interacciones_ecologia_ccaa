@@ -99,7 +99,9 @@ Durante las dos sesiones de dos horas que dura esta práctica iremos comprobando
 
 Además de lo anterior trataremos de evaluar cómo en este proceso cambia la "estabilidad" del sistema. Consideraremos que un sistema ecológico es tanto más estable cuanto menos cambian a lo largo del tiempo las abundancias de las poblaciones que lo constituyen. Las grandes oscilaciones en los números poblacionales suelen aumentar el riesgo de extinción de las poblaciones. Trataremos de evaluar de manera visual la estabilidad de las comunidades que simularemos en esta práctica.
 
-En las siguientes secciones se muestran los distintos estados "evolutivos" de los modelos que iremos trabajando durante la práctica.
+En las siguientes secciones se muestran los distintos estados "evolutivos" de los modelos que iremos trabajando durante la práctica. La siguiente figura muestra un resumen de los distintos casos de estudio que analizaremos.
+
+
 
 
 ## 1. Crecimiento exponencial de una población de conejos
