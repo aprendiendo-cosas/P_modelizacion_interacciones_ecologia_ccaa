@@ -1,10 +1,10 @@
-# Guión para realizar la práctica denominada "Modelización de las interacciones ecológicas. Desde el crecimiento exponencial hasta las cascadas tróficas"
+# Guión para realizar la práctica denominada "Modelización de las interacciones ecológicas. Desde el crecimiento exponencial hasta las relaciones interespecíficas"
 
 
-> + **_Versión_**: 2021-2022
-> + **_Asignatura (grado)_**: Ecología (Ciencias ambientales). Curso 2020-2021
+> + **_Versión_**: 2022-2023
+> + **_Asignatura (grado)_**: Ecología (Ciencias ambientales). 
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
-> + **_Duración_**: Dos sesiones 3 horas cada una.
+> + **_Duración_**: Dos sesiones 2 horas cada una.
 
 ![portada](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/2021-2022/imagenes/portada.png)
 
@@ -81,11 +81,13 @@ En esta práctica utilizaremos modelos temporalmente explícitos. En dichos mode
 
 + Matemáticas subyacentes: ecuaciones diferenciales. Estas herramientas nos permiten cuantificar cómo cambian las variables de estado en cada diferencial de tiempo. 
 
+
+
 ## Software para construir modelos
 
 Al igual que usamos los SIG para representar los cambios de ciertas variables ambientales en el domino del espacio, existen herramientas informáticas que nos permiten hacer lo mismo a lo largo del tiempo. Estas herramientas son las que usamos para generar modelos basados en procesos (la palabra proceso lleva implícita la componente temporal). En nuestro caso usaremos dos herramientas:
 + **Vensim** es una potente aplicación que permite simular multitud de situaciones de la realidad (no solo en el ámbito de la ecología, sino también en la ingeniería). Tiene una versión gratuita que puedes descargar [aquí ](https://vensim.com/free-download/#ple)(selecciona PLE y pon un correo. Te enviarán un mensaje con un enlace para descargar el instalable). Es una aplicación muy fácil de usar. Abajo tienes algunas pinceladas para iniciarte en su manejo:
-  + [Este](https://youtu.be/itB3IBESny0) vídeo muestra gráficamente lso principales elementos del programa. 
+  + [Este](https://youtu.be/itB3IBESny0) vídeo muestra gráficamente los principales elementos del programa. 
   + En [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/descargables/instrucciones_vensim.pdf) documento (preparado por el profesor Diego Jordano Barbudo) puedes ver una descripción detallada de las principales herramientas que usaremos de Vensim. 
   
 + **Stella** es muy parecido al anterior, pero no dispone de versión gratuita. No lo vamos a usar directamente, pero veremos algunos ejemplos de modelos hechos con esta herramienta que están disponibles en internet. 
@@ -93,16 +95,16 @@ Al igual que usamos los SIG para representar los cambios de ciertas variables am
 
 ## Secuencia de acciones de la práctica
 
-Durante las dos sesiones de tres horas que dura esta práctica iremos comprobando cómo se "construye" una comunidad ecológica paso a paso. Utilizaremos una metáfora parecida a la que aplicamos cuando hicimos nuestra primera comunidad ecológica con [bolas de corcho](https://rawcdn.githack.com/aprendiendo-cosas/Te_comunidades_diversidad_ecologia_ccaa/2021_2022/guion_comunidades_diversidad.html). En este proceso iremos complicando la comunidad poco a poco. Partiremos de una población de una única especie que crece exponencialmente. Luego veremos cómo evoluciona esa población si añadimos competencia intraespecífica. Añadiremos más especies que interactúan de diferentes maneras: unas depredan a otras y unas compiten con otras. En todos los casos analizaremos mediante modelos de procesos cómo las interacciones modifican la dinámica poblacional. 
+Durante las dos sesiones de dos horas que dura esta práctica iremos comprobando cómo se "construye" una comunidad ecológica paso a paso. Utilizaremos una metáfora parecida a la que aplicamos cuando hicimos nuestra primera comunidad ecológica con [bolas de corcho](https://rawcdn.githack.com/aprendiendo-cosas/Te_comunidades_diversidad_ecologia_ccaa/2021_2022/guion_comunidades_diversidad.html). En este proceso iremos complicando la comunidad poco a poco. Partiremos de una población de una única especie que crece exponencialmente. Luego veremos cómo evoluciona esa población si añadimos competencia intraespecífica. Añadiremos más especies que interactúan de diferentes maneras: unas depredan a otras y unas compiten con otras. En todos los casos analizaremos mediante modelos de procesos cómo las interacciones modifican la dinámica poblacional. 
 
 Además de lo anterior trataremos de evaluar cómo en este proceso cambia la "estabilidad" del sistema. Consideraremos que un sistema ecológico es tanto más estable cuanto menos cambian a lo largo del tiempo las abundancias de las poblaciones que lo constituyen. Las grandes oscilaciones en los números poblacionales suelen aumentar el riesgo de extinción de las poblaciones. Trataremos de evaluar de manera visual la estabilidad de las comunidades que simularemos en esta práctica.
 
 En las siguientes secciones se muestran los distintos estados "evolutivos" de los modelos que iremos trabajando durante la práctica.
 
 
-## Crecimiento exponencial de una población de conejos
+## 1. Crecimiento exponencial de una población de conejos
 
-En esta simulación veremos cómo crece una población sin ningún tipo de relación con el entorno. Aunque sabemos que esto no ocurre en realidad, tiene interés realizarla porque nos permite ver la magnitud de la idea de crecimiento exponencial. Cualquier entidad biológica que crece sin limitación crecerá exponencialmente. Esto ocurre solo en circunstancias en las que un organismo tiene a su disposición recursos ilimitados. 
+En esta simulación veremos cómo crece una población sin ningún tipo de relación con el entorno. Aunque sabemos que esto no ocurre en realidad, tiene interés realizarla porque nos permite ver la magnitud de la idea de crecimiento exponencial. Cualquier entidad biológica que vive sin limitación crecerá exponencialmente. Esto ocurre solo en circunstancias en las que un organismo tiene a su disposición recursos ilimitados. 
 
 Para construir el modelo empezamos haciendo lo siguiente:
 1. En el menú "File" crea un nuevo modelo haciendo click en "New Model". eso abrirá una ventana con varias opciones. Completa las siguientes:
@@ -152,21 +154,21 @@ Para construir el modelo empezamos haciendo lo siguiente:
 13. Damos nombre a la ejecución: *conejo_exponencial_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué diferencias hay entre las dos gráficas? ¿a qué se deben?
 
 
-## Crecimiento logístico de una población de conejos
+## 2. Crecimiento logístico de una población de conejos
 
 Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este caso la competencia intraespecífica. Esto implica definir la capacidad de carga del sistema. Al contemplar este tipo de interacción veremos cómo el crecimiento exponencial pasa a ser logístico. Para ello hemos de crear y/o modificar los siguientes elementos del modelo ya existente:
 
-14. Partiendo del modelo *1_conejo_exponencial.mdl* hacemos lo siguiente:
-    14.1. Creamos variable *capacidad de carga* y le damos el valor de 2000 (usando el botón "equations").
-    14.2. Conectamos esta nueva variable con *Nacimientos conejos*.
-    14.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
+1. Partiendo del modelo *1_conejo_exponencial.mdl* hacemos lo siguiente:
+    1.1. Creamos variable *capacidad de carga* y le damos el valor de 2000 (usando el botón "equations").
+    1.2. Conectamos esta nueva variable con *Nacimientos conejos*.
+    1.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
   15. Guardamos el modelo con otro nombre (save as): *2_conejo_logistico.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/descargables/2_conejo_logistico.mdl.zip) si no has conseguido hacerlo. 
   15. Ahora cerramos vensim y, en el explorador de archivos, borramos todos los archivos que tengan extensión "vdfx". Esto hará que la gráfica que se crea con la nueva ejecución sea visible y no se solape con las que hemos hecho en los modelos anteriores.
   15. Damos nombre a la ejecución: *conejo_logistico_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué ves? 
 
 
 
-## Comunidad con dos especies y depredación: linces depredando conejos y conejos creciendo exponencialmente (sin competencia intraespecífica)
+## 3. Comunidad con dos especies y depredación: linces depredando conejos y conejos creciendo exponencialmente (sin competencia intraespecífica)
 
 1. Abrimos el modelo *1_conejo_exponencial.mdl*
 2. Incorporalos los siguientes elementos: 
@@ -194,7 +196,7 @@ Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este
 9. Guardamos el modelo con este nombre: *3_conejo_exponencial_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/descargables/3_conejo_exponencial_lince.mdl.zip).
 10. Nombramos la ejecución: *conejo_exp_lince* y la ejecutamos. Mostramos las gráficas de *Nº conejos* y *Nº linces* . ¿Cómo se interpretan las gráficas obtenidas? ¿qué diferencias ves respecto a las del modelo anterior?
 
-## Comunidad con dos especies y depredación: linces depredando conejos y conejos creciendo logísticamente (con competencia intraespecífica)
+## 4. Comunidad con dos especies y depredación: linces depredando conejos y conejos creciendo logísticamente (con competencia intraespecífica)
 
 1. Partimos del modelo anterior (*3_conejo_exponencial_lince.mdl*) sobre el que incoraremos el "freno" provocado por la competencia intraespecífica: capacidad de carga del medio los conejos:
 1.1.  Creamos variable *capacidad de carga conejos* y le damos el valor de 2000 (usando el botón "equations")
@@ -204,7 +206,7 @@ Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este
 3. Guardamos este nuevo modelo: *4_conejo_logistico_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/descargables/4_conejo_logistico_lince.mdl.zip).
 
 
-## Comunidad con tres especies, depredación y caza
+## 5. Comunidad con tres especies, depredación y caza
 
 El objetivo de este modelo es analizar cómo afecta a la dinámica de tres especies la extracción de ejemplares mediante la caza. La comunidad objetivo está formada por hierba, herbívoros y carnívoros. Las poblaciones de herbáceas están limtadas por la disponibilidad de agua (que no se puede controlar en el modelo). Las de herbívoros vienen controladas por las poblaciones de hierba. Y las de depredadores por las de presas. Esta ocasión no construiremos ningún modelo, sino que usaremos uno existente. Está disponible en [esta](https://exchange.iseesystems.com/public/creativelearningexchange/predator-prey-biomass-levelc/index.html#page1) web. Analizaremos las consecuencias que tiene la caza de depredadores y de presas en este sistema. Concretamente realizaremos los siguientes experimentos:
 + Ejecutar el modelo sin cazar presas ni depredadores. ¿qué dinámica se presenta al final?
@@ -213,7 +215,7 @@ El objetivo de este modelo es analizar cómo afecta a la dinámica de tres espec
 + A continuación ejecutamos el modelo de manera que cambiamos los parámetros cad 5 años. Intentamos generar más estabilidad en el sistema mediante la retirada de presas y de depredadores. 
 + Por último, ejecutamos el modelo teniendo en cuenta una serie de perturbaciones que ocurren el sistema de imprevisto. Veremos cómo aparecen sequías, enfermedades en las presas, etc. Además, los cazadores y habitantes de la zona nos irán avisando de sus necesidades. Debemos de trata de atenderlas intentando que las dinámicas poblacionales de las tres especies que conforman el modelo no se vean afectadas. 
 
-## Comunidad con dos especies que compiten entre sí y con un depredador. Concepto de nicho ecológico.
+## 6. Comunidad con dos especies que compiten entre sí y con un depredador. Concepto de nicho ecológico.
 
 Aquí abordaremos la competencia interespecífica, que aún no hemos visto en las clases de teoría. Puedes ver el guión con los conceptos más importantes [aquí](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/2021-2022/guion_competencia_interespecifica.html). 
 
@@ -238,13 +240,3 @@ El ejemplo que nos ocupa es un caso claro de esta situación. A finales del sigl
 
 [Este](https://www.youtube.com/watch?v=ysa5OBhXz-Q) vídeo muestra el primer ejemplo de cascada trófica que conocimos. Ocurrió en los años 90 del siglo pasado en el parque nacional de Yellowstone cuando se reintrodujo el lobo. En [esta](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/descargables/cascadas_troficas.pptx) presentación tienes más información sobre este fenómeno, así como otro ejemplo en Australia. Y [aquí](https://exchange.iseesystems.com/public/isee/wolves-and-trees/index.html) puedes ver la estructura de un modelo construido con Stella que simula el conjunto de relaciones entre las especies de Yellowstone que se vieron afectados por la extinción y por la reintroducción del lobo. 
 
-
-## Evaluación de la sesión según los estudiantes
-
-Aquí puedes ver los resultados que, por ahora, arroja [esta](https://docs.google.com/forms/d/e/1FAIpQLScbCKaNkzzjV5bH0yek41FO-KS7LtLhT_ilITS_ZR0Z2XJyCA/viewform?usp=sf_link) encuesta sobre grado de satisfacción de los objetivos planteados. Por favor, rellénala si no lo has hecho ya. Se tardan 10 segundos y sus resultados son de gran utilidad para mejorar los contenidos cada año. Gracias.
-
-+ Primera sesión
-
-<img src="https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/imagenes/cumplimiento_objetivos_1.png" alt="image" style="zoom:50%;" />
-
-<img src="https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/imagenes/desempenio_profesor_1.png" alt="image" style="zoom:50%;" />
