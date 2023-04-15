@@ -6,7 +6,7 @@
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
 > + **_Duración_**: Dos sesiones 2 horas cada una.
 
-![portada](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/2021-2022/imagenes/portada.png)
+![portada](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/imagenes/portada.png)
 
 ## Objetivos
 
@@ -35,9 +35,9 @@ Esta práctica tiene los siguientes objetivos:
 El contexto ecológico de esta práctica es el bloque de temas de teoría en los que abordamos la dinámica poblacional y las interacciones interespecíficas. En concreto, para entender bien lo que hacemos aquí deberás estar familiarizado con los siguientes temas:
 
 + [Aspectos generales sobre poblaciones ecológicas.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_ecologia_ccaa/2021_2022/guion_poblaciones_general.html)
-+ [Competencia intraespecífica.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_comp_intra_ecologia_ccaa/2021-2022/guion_competencia_intraespecifica.html)
-+ [Interacciones ecológicas. Depredación.](https://rawcdn.githack.com/aprendiendo-cosas/Te_depredacion_ecologia_ccaa/2021-2022/guion_depredacion.html) En clase vimos solo la parte "teórica" de este tema. En el guión tienes todo el material.
-+ [Interacciones ecológicas. Competencia interespecífica](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/2021-2022/guion_competencia_interespecifica.html). Competencia interespecífica. 
++ [Competencia intraespecífica.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_comp_intra_ecologia_ccaa/main/guion_competencia_intraespecifica.html)
++ [Interacciones ecológicas. Depredación.](https://rawcdn.githack.com/aprendiendo-cosas/Te_depredacion_ecologia_ccaa/main/guion_depredacion.html) En clase vimos solo la parte "teórica" de este tema. En el guión tienes todo el material.
++ [Interacciones ecológicas. Competencia interespecífica](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/main/guion_competencia_interespecifica.html). Competencia interespecífica. 
 
 
 ## Modelos basados en procesos
@@ -48,7 +48,7 @@ En el proceso de construcción de un modelo, simpflificamos la realidad y "quita
 
 Sin embargo, al mismo tiempo ocurre que un modelo es tanto mejor cuanto más ajustado está a la realidad. Eso genera un aparente dilema que se resuelve indicando que cuando construimos un modelo establecemos una relación simétrica con la realidad. La siguiente figura muestra esta situación. 
 
-<img src="https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/2021-2022/imagenes/simetria.png" alt="simetria" style="zoom:50%;" />
+<img src="https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/imagenes/simetria.png" alt="simetria" style="zoom:50%;" />
 
 Esta simetría tiene varias implicaciones a efectos prácticos:
 
@@ -88,7 +88,7 @@ En esta práctica utilizaremos modelos temporalmente explícitos. En dichos mode
 Al igual que usamos los SIG para representar los cambios de ciertas variables ambientales en el domino del espacio, existen herramientas informáticas que nos permiten hacer lo mismo a lo largo del tiempo. Estas herramientas son las que usamos para generar modelos basados en procesos (la palabra proceso lleva implícita la componente temporal). En nuestro caso usaremos dos herramientas:
 + **Vensim** es una potente aplicación que permite simular multitud de situaciones de la realidad (no solo en el ámbito de la ecología, sino también en la ingeniería). Tiene una versión gratuita que puedes descargar [aquí ](https://vensim.com/free-download/#ple)(selecciona PLE y pon un correo. Te enviarán un mensaje con un enlace para descargar el instalable). Es una aplicación muy fácil de usar. Abajo tienes algunas pinceladas para iniciarte en su manejo:
   + [Este](https://youtu.be/itB3IBESny0) vídeo muestra gráficamente los principales elementos del programa. 
-  + En [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/descargables/instrucciones_vensim.pdf) documento (preparado por el profesor Diego Jordano Barbudo) puedes ver una descripción detallada de las principales herramientas que usaremos de Vensim. 
+  + En [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/instrucciones_vensim.pdf) documento (preparado por el profesor Diego Jordano Barbudo) puedes ver una descripción detallada de las principales herramientas que usaremos de Vensim. 
   
 + **Stella** es muy parecido al anterior, pero no dispone de versión gratuita. No lo vamos a usar directamente, pero veremos algunos ejemplos de modelos hechos con esta herramienta que están disponibles en internet. 
 
@@ -99,7 +99,15 @@ Durante las dos sesiones de dos horas que dura esta práctica iremos comprobando
 
 Además de lo anterior trataremos de evaluar cómo en este proceso cambia la "estabilidad" del sistema. Consideraremos que un sistema ecológico es tanto más estable cuanto menos cambian a lo largo del tiempo las abundancias de las poblaciones que lo constituyen. Las grandes oscilaciones en los números poblacionales suelen aumentar el riesgo de extinción de las poblaciones. Trataremos de evaluar de manera visual la estabilidad de las comunidades que simularemos en esta práctica.
 
-En las siguientes secciones se muestran los distintos estados "evolutivos" de los modelos que iremos trabajando durante la práctica. La siguiente figura muestra un resumen de los distintos casos de estudio que analizaremos.
+En las siguientes secciones se muestran los distintos estados "evolutivos" de los modelos que iremos trabajando durante la práctica. Generaremos tres modelos con Vensim y experimentaremos con otros dos modelos creados también con Vensim que están disponibles en internet. Las dos siguientes figuras muestran de manera resumida los modelos que crearemos y con los que trabajaremos.
+
+
+
+![modelos_vensim](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/imagenes/modelos_vensim.png)
+
+
+
+![modelos_vensim](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/imagenes/experimentos.png)
 
 
 
@@ -147,7 +155,7 @@ Para construir el modelo empezamos haciendo lo siguiente:
 
       + *Tasa mortalidad conejos* = 0.02
 
-9. Guarda el modelo y dale este nombre: *1_conejo_exponencial.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/descargables/1_conejo_exponencial.mdl.zip) si no has podido construirlo correctamente. 
+9. Guarda el modelo y dale este nombre: *1_conejo_exponencial.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/1_conejo_exponencial.mdl.zip) si no has podido construirlo correctamente. 
 
 10. Damos nombre a la ejecución: *conejo_exponencial_2_002* y la ejecutamos.
 
@@ -165,7 +173,7 @@ Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este
     1.1. Creamos variable *capacidad de carga* y le damos el valor de 2000 (usando el botón "equations").
     1.2. Conectamos esta nueva variable con *Nacimientos conejos*.
     1.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
-  15. Guardamos el modelo con otro nombre (save as): *2_conejo_logistico.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/descargables/2_conejo_logistico.mdl.zip) si no has conseguido hacerlo. 
+  15. Guardamos el modelo con otro nombre (save as): *2_conejo_logistico.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/2_conejo_logistico.mdl.zip) si no has conseguido hacerlo. 
   15. Ahora cerramos vensim y, en el explorador de archivos, borramos todos los archivos que tengan extensión "vdfx". Esto hará que la gráfica que se crea con la nueva ejecución sea visible y no se solape con las que hemos hecho en los modelos anteriores.
   15. Damos nombre a la ejecución: *conejo_logistico_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué ves? 
 
@@ -196,7 +204,7 @@ Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este
    + Modificar la ecuación de *Nacimientos linces* así: *Nº linces \* Tasa de natalidad linces \* Nº conejos*
    + Añadir flecha desde *Nº linces* hasta *Muertes conejos"
    + Modificar la ecuación de *Muertes conejos* así: *Nº conejos \* Tasa mortalidad conejos \* Nº linces*
-9. Guardamos el modelo con este nombre: *3_conejo_exponencial_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/descargables/3_conejo_exponencial_lince.mdl.zip).
+9. Guardamos el modelo con este nombre: *3_conejo_exponencial_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/3_conejo_exponencial_lince.mdl.zip).
 10. Nombramos la ejecución: *conejo_exp_lince* y la ejecutamos. Mostramos las gráficas de *Nº conejos* y *Nº linces* . ¿Cómo se interpretan las gráficas obtenidas? ¿qué diferencias ves respecto a las del modelo anterior?
 
 
@@ -208,7 +216,7 @@ Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este
 1.2. Conectamos esta nueva variable con *Nacimientos conejos*.
 1.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
 2. Damos nombre a la ejecución: *conejo_log_lince* y la ejecutamos. Vemos la gráfica del número de conejos y de linces. Puedes comparar los resultados de este modelo (con competencia intraespecífica para el conejo) con los del anterior (sin competencia intraespecífica). ¿cuál de las dos situaciones consideras que es más "estable"?
-3. Guardamos este nuevo modelo: *4_conejo_logistico_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/descargables/4_conejo_logistico_lince.mdl.zip).
+3. Guardamos este nuevo modelo: *4_conejo_logistico_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/4_conejo_logistico_lince.mdl.zip).
 
 
 
@@ -223,7 +231,7 @@ El objetivo de este modelo es analizar cómo afecta a la dinámica de tres espec
 
 ## 6. Comunidad con dos especies que compiten entre sí y con un depredador. Concepto de nicho ecológico.
 
-Aquí abordaremos la competencia interespecífica, que aún no hemos visto en las clases de teoría. Puedes ver el guión con los conceptos más importantes [aquí](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/2021-2022/guion_competencia_interespecifica.html). 
+Aquí abordaremos la competencia interespecífica, que aún no hemos visto en las clases de teoría. Puedes ver el guión con los conceptos más importantes [aquí](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/main/guion_competencia_interespecifica.html). 
 
 Estudiaremos el impacto que tiene la competencia interespecífica en una comunidad de crustaceos en un ambiente intermareal. Usaremos un modelo disponible en [esta](http://virtualbiologylab.org/ModelsHTML5/BarnacleCompetition/BarnacleCompetitionModel.html) web. Para entender bien el proceso que ocurre en este ejemplo, debemos conocer también el concepto de nicho ecológico. [Este](https://es.khanacademy.org/science/ap-biology/ecology-ap/community-ecology/a/niches-competition) artículo de Khan Academy lo explica muy bien. 
 
@@ -244,5 +252,5 @@ Este último ejemplo muestra el funcionamiento de una comunidad ecológica en su
 
 El ejemplo que nos ocupa es un caso claro de esta situación. A finales del siglo XX aprendimos la importancia crítica que tienen los depredadores en los ecosistemas. Y lo hicimos cuando constatamos cómo cambiaba el sistema en su conjunto al reintroducir un gran depredador en un territorio del que fue erradicado décadas antes. Al conjunto de alteraciones que, en un territorio determinado, provoca la erradicación de un depreador apical (el que está en la "cumbre" de la red trófica), se le denomina cascada trófica. 
 
-[Este](https://www.youtube.com/watch?v=ysa5OBhXz-Q) vídeo muestra el primer ejemplo de cascada trófica que conocimos. Ocurrió en los años 90 del siglo pasado en el parque nacional de Yellowstone cuando se reintrodujo el lobo. En [esta](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/descargables/cascadas_troficas.pptx) presentación tienes más información sobre este fenómeno, así como otro ejemplo en Australia. Y [aquí](https://exchange.iseesystems.com/public/isee/wolves-and-trees/index.html) puedes ver la estructura de un modelo construido con Stella que simula el conjunto de relaciones entre las especies de Yellowstone que se vieron afectados por la extinción y por la reintroducción del lobo. 
+[Este](https://www.youtube.com/watch?v=ysa5OBhXz-Q) vídeo muestra el primer ejemplo de cascada trófica que conocimos. Ocurrió en los años 90 del siglo pasado en el parque nacional de Yellowstone cuando se reintrodujo el lobo. En [esta](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/cascadas_troficas.pptx) presentación tienes más información sobre este fenómeno, así como otro ejemplo en Australia. Y [aquí](https://exchange.iseesystems.com/public/isee/wolves-and-trees/index.html) puedes ver la estructura de un modelo construido con Stella que simula el conjunto de relaciones entre las especies de Yellowstone que se vieron afectados por la extinción y por la reintroducción del lobo. 
 
