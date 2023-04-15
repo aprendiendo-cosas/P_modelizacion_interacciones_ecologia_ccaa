@@ -156,6 +156,7 @@ Para construir el modelo empezamos haciendo lo siguiente:
 13. Damos nombre a la ejecución: *conejo_exponencial_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué diferencias hay entre las dos gráficas? ¿a qué se deben?
 
 
+
 ## 2. Crecimiento logístico de una población de conejos
 
 Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este caso la competencia intraespecífica. Esto implica definir la capacidad de carga del sistema. Al contemplar este tipo de interacción veremos cómo el crecimiento exponencial pasa a ser logístico. Para ello hemos de crear y/o modificar los siguientes elementos del modelo ya existente:
@@ -198,6 +199,8 @@ Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este
 9. Guardamos el modelo con este nombre: *3_conejo_exponencial_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/descargables/3_conejo_exponencial_lince.mdl.zip).
 10. Nombramos la ejecución: *conejo_exp_lince* y la ejecutamos. Mostramos las gráficas de *Nº conejos* y *Nº linces* . ¿Cómo se interpretan las gráficas obtenidas? ¿qué diferencias ves respecto a las del modelo anterior?
 
+
+
 ## 4. Comunidad con dos especies y depredación: linces depredando conejos y conejos creciendo logísticamente (con competencia intraespecífica)
 
 1. Partimos del modelo anterior (*3_conejo_exponencial_lince.mdl*) sobre el que incoraremos el "freno" provocado por la competencia intraespecífica: capacidad de carga del medio los conejos:
@@ -206,6 +209,7 @@ Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este
 1.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
 2. Damos nombre a la ejecución: *conejo_log_lince* y la ejecutamos. Vemos la gráfica del número de conejos y de linces. Puedes comparar los resultados de este modelo (con competencia intraespecífica para el conejo) con los del anterior (sin competencia intraespecífica). ¿cuál de las dos situaciones consideras que es más "estable"?
 3. Guardamos este nuevo modelo: *4_conejo_logistico_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2021-2022/descargables/4_conejo_logistico_lince.mdl.zip).
+
 
 
 ## 5. Comunidad con tres especies, depredación y caza
