@@ -13,10 +13,10 @@
 Esta práctica tiene los siguientes objetivos:
 + Disciplinares:
   + Reforzar el conocimiento adquirido sobre los siguientes aspectos de poblaciones y comunidades:
-  + Dinámicas poblacionales en ausencia de interacciones ecológicas (crecimiento exponencial).
-  + Dinámicas poblacionales considerando la competencia intraespecífica (crecimiento logístico).
-  + Relaciones entre depredadores y presas e implicaciones sobre sus dinámicas poblacionales.
-  + Relaciones entre especies que compiten por los mismos recursos.
+    + Dinámicas poblacionales en ausencia de interacciones ecológicas (crecimiento exponencial).
+    + Dinámicas poblacionales considerando la competencia intraespecífica (crecimiento logístico).
+    + Relaciones entre depredadores y presas e implicaciones sobre sus dinámicas poblacionales.
+    + Relaciones entre especies que compiten por los mismos recursos.
   + Consecuencias de las relaciones anteriores en el ensamblaje de comunidades reales.
   + Constatar el efecto de la retroalimentación negativa y positiva en las interacciones presa-depredador.
   + Constatar cómo la homeostasis es una propiedad emergente cuando interactúan presas y depredadores.
@@ -34,10 +34,11 @@ Esta práctica tiene los siguientes objetivos:
 
 El contexto ecológico de esta práctica es el bloque de temas de teoría en los que abordamos la dinámica poblacional y las interacciones interespecíficas. En concreto, para entender bien lo que hacemos aquí deberás estar familiarizado con los siguientes temas:
 
-+ [Aspectos generales sobre poblaciones ecológicas.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_ecologia_ccaa/2021_2022/guion_poblaciones_general.html)
-+ [Competencia intraespecífica.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_comp_intra_ecologia_ccaa/main/guion_competencia_intraespecifica.html)
-+ [Interacciones ecológicas. Depredación.](https://rawcdn.githack.com/aprendiendo-cosas/Te_depredacion_ecologia_ccaa/main/guion_depredacion.html) En clase vimos solo la parte "teórica" de este tema. En el guión tienes todo el material.
++ [Aspectos generales sobre poblaciones ecológicas.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_ecologia_ccaa/2022_2023/guion_poblaciones_general.html)
++ [Competencia intraespecífica.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_comp_intra_ecologia_ccaa/2022-2023/guion_competencia_intraespecifica.html)
++ [Interacciones ecológicas. Depredación.](https://rawcdn.githack.com/aprendiendo-cosas/Te_depredacion_ecologia_ccaa/2022-2023/guion_depredacion.html) En clase vimos solo la parte "teórica" de este tema. En el guión tienes todo el material.
 + [Interacciones ecológicas. Competencia interespecífica](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/main/guion_competencia_interespecifica.html). Competencia interespecífica. 
+
 
 
 ## Modelos basados en procesos
@@ -93,6 +94,7 @@ Al igual que usamos los SIG para representar los cambios de ciertas variables am
 + **Stella** es muy parecido al anterior, pero no dispone de versión gratuita. No lo vamos a usar directamente, pero veremos algunos ejemplos de modelos hechos con esta herramienta que están disponibles en internet. 
 
 
+
 ## Secuencia de acciones de la práctica
 
 Durante las dos sesiones de dos horas que dura esta práctica iremos comprobando cómo se "construye" una comunidad ecológica paso a paso. Utilizaremos una metáfora parecida a la que aplicamos cuando hicimos nuestra primera comunidad ecológica con [bolas de corcho](https://rawcdn.githack.com/aprendiendo-cosas/Te_comunidades_diversidad_ecologia_ccaa/2021_2022/guion_comunidades_diversidad.html). En este proceso iremos complicando la comunidad poco a poco. Partiremos de una población de una única especie que crece exponencialmente. Luego veremos cómo evoluciona esa población si añadimos competencia intraespecífica. Añadiremos más especies que interactúan de diferentes maneras: unas depredan a otras y unas compiten con otras. En todos los casos analizaremos mediante modelos de procesos cómo las interacciones modifican la dinámica poblacional. 
@@ -104,8 +106,6 @@ En las siguientes secciones se muestran los distintos estados "evolutivos" de lo
 
 
 ![modelos_vensim](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/imagenes/modelos_vensim.png)
-
-
 
 ![modelos_vensim](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/main/imagenes/experimentos.png)
 
@@ -244,13 +244,5 @@ Haremos los siguientes experimentos en el modelo anterior:
 
 
 
-**MOVER TODO ESTO DE LA CASCADA TRÓFICA A LA SESIÓN TEÓRICA DE PRODUCCIÓN SECUNDARIA. ALLÍ YA SE HABLA DE REGULACIÓN TOP-DOWN**
-
-## Comunidad con multitud de especies. Efecto de la depredación en el sistema. Cascadas tróficas.
-
-Este último ejemplo muestra el funcionamiento de una comunidad ecológica en su conjunto. Pero lo hace de una forma muy poco recomendable: eliminando una parte importante de la misma. Me explico. La complejidad de los sistemas ecológicos es tal que mucha veces aprendemos de ellos cuando conocemos las consecuencias de su malfuncionamiento. Es como si aprendiéramos la mecánica de un coche intentando usarlo después de quitarle alguna pieza. Para saber la utilidad del freno, por ejemplo, no hay nada más útil que romperlo y tratar de conducir. Esto suena un poco desabellado, pero esta "táctica" se ha usado muchas veces de manera no deliberada.
-
-El ejemplo que nos ocupa es un caso claro de esta situación. A finales del siglo XX aprendimos la importancia crítica que tienen los depredadores en los ecosistemas. Y lo hicimos cuando constatamos cómo cambiaba el sistema en su conjunto al reintroducir un gran depredador en un territorio del que fue erradicado décadas antes. Al conjunto de alteraciones que, en un territorio determinado, provoca la erradicación de un depreador apical (el que está en la "cumbre" de la red trófica), se le denomina cascada trófica. 
-
-[Este](https://www.youtube.com/watch?v=ysa5OBhXz-Q) vídeo muestra el primer ejemplo de cascada trófica que conocimos. Ocurrió en los años 90 del siglo pasado en el parque nacional de Yellowstone cuando se reintrodujo el lobo. En [esta](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/cascadas_troficas.pptx) presentación tienes más información sobre este fenómeno, así como otro ejemplo en Australia. Y [aquí](https://exchange.iseesystems.com/public/isee/wolves-and-trees/index.html) puedes ver la estructura de un modelo construido con Stella que simula el conjunto de relaciones entre las especies de Yellowstone que se vieron afectados por la extinción y por la reintroducción del lobo. 
-
+## Material a entregar
+En esta práctica no tendrás que entregar nada. Así que podrás disfrutar de aprender si tener que entregar nada...
