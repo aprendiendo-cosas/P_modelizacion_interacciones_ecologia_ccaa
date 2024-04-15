@@ -1,10 +1,10 @@
 # Guión para realizar la práctica denominada "Modelización de las interacciones ecológicas. Desde el crecimiento exponencial hasta las relaciones interespecíficas"
 
 
-> + **_Versión_**: 2022-2023
+> + **_Versión_**: 2023-2024
 > + **_Asignatura (grado)_**: Ecología (Ciencias ambientales). 
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
-> + **_Duración_**: Dos sesiones 2 horas cada una.
+> + **_Duración_**: Una sesión de tres horas.
 
 ![portada](https://github.com/aprendiendo-cosas/P_vensim_depredacion_ecologia_ccaa/raw/2022-2023/imagenes/portada.png)
 
@@ -34,10 +34,10 @@ Esta práctica tiene los siguientes objetivos:
 
 El contexto ecológico de esta práctica es el bloque de temas de teoría en los que abordamos la dinámica poblacional y las interacciones interespecíficas. En concreto, para entender bien lo que hacemos aquí deberás estar familiarizado con los siguientes temas:
 
-+ [Aspectos generales sobre poblaciones ecológicas.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_ecologia_ccaa/2022_2023/guion_poblaciones_general.html)
-+ [Competencia intraespecífica.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_comp_intra_ecologia_ccaa/2022-2023/guion_competencia_intraespecifica.html)
-+ [Interacciones ecológicas. Depredación.](https://rawcdn.githack.com/aprendiendo-cosas/Te_depredacion_ecologia_ccaa/2022-2023/guion_depredacion.html) En clase vimos solo la parte "teórica" de este tema. En el guión tienes todo el material.
-+ [Interacciones ecológicas. Competencia interespecífica](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/2022__2023/guion_competencia_interespecifica.html). Competencia interespecífica. 
++ [Aspectos generales sobre poblaciones ecológicas.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_ecologia_ccaa/2023_2024/guion_poblaciones_general.html)
++ [Competencia intraespecífica.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_comp_intra_ecologia_ccaa/2023_2024/guion_competencia_intraespecifica.html)
++ [Interacciones ecológicas. Depredación.](https://rawcdn.githack.com/aprendiendo-cosas/Te_depredacion_ecologia_ccaa/main/guion_depredacion.html) En clase vimos solo la parte "teórica" de este tema. En el guión tienes todo el material.
++ [Interacciones ecológicas. Competencia interespecífica](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/main/guion_competencia_interespecifica.html). Competencia interespecífica. 
 
 
 
@@ -97,7 +97,7 @@ Al igual que usamos los SIG para representar los cambios de ciertas variables am
 
 ## Secuencia de acciones de la práctica
 
-Durante las dos sesiones de dos horas que dura esta práctica iremos comprobando cómo se "construye" una comunidad ecológica paso a paso. Utilizaremos una metáfora parecida a la que aplicamos cuando hicimos nuestra primera comunidad ecológica con [bolas de corcho](https://rawcdn.githack.com/aprendiendo-cosas/Te_comunidades_diversidad_ecologia_ccaa/2022-2023/guion_comunidades_diversidad.html). En este proceso iremos complicando la comunidad poco a poco. Partiremos de una población de una única especie que crece exponencialmente. Luego veremos cómo evoluciona esa población si añadimos competencia intraespecífica. Añadiremos más especies que interactúan de diferentes maneras: unas depredan a otras y unas compiten con otras. En todos los casos analizaremos mediante modelos de procesos cómo las interacciones modifican la dinámica poblacional. 
+Durante esta práctica iremos comprobando cómo se "construye" una comunidad ecológica paso a paso. Utilizaremos una metáfora parecida a la que aplicamos cuando hicimos nuestra primera comunidad ecológica con [bolas de corcho](https://rawcdn.githack.com/aprendiendo-cosas/Te_comunidades_diversidad_ecologia_ccaa/main/guion_comunidades_diversidad.html). En este proceso iremos complicando la comunidad poco a poco. Partiremos de una población de una única especie que crece exponencialmente. Luego veremos cómo evoluciona esa población si añadimos competencia intraespecífica. Añadiremos más especies que interactúan de diferentes maneras: unas depredan a otras y unas compiten con otras. En todos los casos analizaremos mediante modelos de procesos cómo las interacciones modifican la dinámica poblacional. 
 
 Además de lo anterior trataremos de evaluar cómo en este proceso cambia la "estabilidad" del sistema. Consideraremos que un sistema ecológico es tanto más estable cuanto menos cambian a lo largo del tiempo las abundancias de las poblaciones que lo constituyen. Las grandes oscilaciones en los números poblacionales suelen aumentar el riesgo de extinción de las poblaciones. Trataremos de evaluar de manera visual la estabilidad de las comunidades que simularemos en esta práctica.
 
@@ -231,9 +231,7 @@ El objetivo de este modelo es analizar cómo afecta a la dinámica de tres espec
 
 ## 6. Comunidad con dos especies que compiten entre sí y con un depredador. Concepto de nicho ecológico.
 
-Aquí abordaremos la competencia interespecífica, que aún no hemos visto en las clases de teoría. Puedes ver el guión con los conceptos más importantes [aquí](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/2022-2023/guion_competencia_interespecifica.html). 
-
-Estudiaremos el impacto que tiene la competencia interespecífica en una comunidad de crustaceos en un ambiente intermareal. Usaremos un modelo disponible en [esta](http://virtualbiologylab.org/ModelsHTML5/BarnacleCompetition/BarnacleCompetitionModel.html) web. Para entender bien el proceso que ocurre en este ejemplo, debemos conocer también el concepto de nicho ecológico. [Este](https://es.khanacademy.org/science/ap-biology/ecology-ap/community-ecology/a/niches-competition) artículo de Khan Academy lo explica muy bien. 
+Aquí estudiaremos el impacto que tiene la competencia interespecífica en una comunidad de crustaceos en un ambiente intermareal. Usaremos un modelo disponible en [esta](http://virtualbiologylab.org/ModelsHTML5/BarnacleCompetition/BarnacleCompetitionModel.html) web. Para entender bien el proceso que ocurre en este ejemplo, debemos conocer también el concepto de nicho ecológico. [Este](https://es.khanacademy.org/science/ap-biology/ecology-ap/community-ecology/a/niches-competition) artículo de Khan Academy lo explica muy bien. 
 
 Haremos los siguientes experimentos en el modelo anterior:
 + Eliminar *Chthamalus* del área superior. Ejecutar el modelo y anotar el resultado después de 50 días. ¿qué ocurre?, ¿reemplaza *Balanus* a la especie eliminada?, ¿Por qué?
@@ -244,5 +242,3 @@ Haremos los siguientes experimentos en el modelo anterior:
 
 
 
-## Material a entregar
-En esta práctica no tendrás que entregar nada. Así que podrás disfrutar de aprender si tener que entregar nada...
