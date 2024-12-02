@@ -242,6 +242,23 @@ Haremos los siguientes experimentos en el modelo anterior:
 + Según hemos visto, ¿qué pasaría si eliminarámos todos los *Balanus* e impidiésemos su reprodución? ¿Y si hacemos lo mismo con "*Chthalamadus*".
 
 
+## 7. Modelo de dinámica poblacional de los ecosistema de Sierra Nevada
+
++ Objetivo: evaluar en qué medida el histograma que obtuvimos representa o no una dinámica poblacional estable
++ Descripción del modelo
++ Descripción de los parámetros que cambian en los distintos ecosistemas
++ Preguntas concretas para cada tipo de ecosistema
+
+
+
+
+
+
+
+
+
+
+
 ****
 [Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/archive/refs/tags/2024_2025.zip) puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.
 
