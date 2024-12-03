@@ -1,0 +1,232 @@
+{UTF-8}
+********************************************************
+	.3 histograma incendio todos
+********************************************************~
+		<?xml version="1.0" encoding="UTF-8"?>
+		<richtext version="1.0.0.0" xmlns="http://www.wxwidgets.org">
+		  <paragraphlayout textcolor="#000000" fontpointsize="13" fontfamily="72" \
+		fontstyle="90" fontweight="400" fontunderlined="0" \
+		fontface=".AppleSystemUIFont" alignment="1" parspacingafter="10" \
+		parspacingbefore="0" linespacing="10" margin-left="5,4098" \
+		margin-right="5,4098" margin-top="5,4098" margin-bottom="5,4098">
+		    <paragraph>
+		      <text></text>
+		    </paragraph>
+		  </paragraphlayout>
+		</richtext>
+	|
+
+Incendio reproductores=
+	PULSE(Anio perturbacion, 1 )*0.3*Reproductores
+	~	
+	~		|
+
+incendio ancianos=
+	PULSE(Anio perturbacion, 1 )*0.3*Ancianos
+	~	
+	~		|
+
+Jovenes=A FUNCTION OF(Jovenes,incendio jovenes,jovenes a reproductores,Mortalidad de jovenes\
+		,Natalidad) ~~|
+Jovenes= INTEG (
+	Natalidad-incendio jovenes-jovenes a reproductores-Mortalidad de jovenes,
+		)
+	~	plantas
+	~		|
+
+Ancianos=A FUNCTION OF(Ancianos,incendio ancianos,Mortalidad de ancianos,reproductores a ancianos\
+		) ~~|
+Ancianos= INTEG (
+	reproductores a ancianos-incendio ancianos-Mortalidad de ancianos,
+		)
+	~	plantas
+	~		|
+
+Anio perturbacion=
+	2100
+	~	
+	~		|
+
+incendio jovenes=
+	PULSE(Anio perturbacion, 1 )*0.3*Jovenes
+	~	
+	~		|
+
+Reproductores=A FUNCTION OF(Reproductores,Incendio reproductores,jovenes a reproductores\
+		,Mortalidad de reproductores,reproductores a ancianos) ~~|
+Reproductores= INTEG (
+	jovenes a reproductores-reproductores a ancianos-Incendio reproductores-Mortalidad de reproductores\
+		,
+		)
+	~	plantas
+	~		|
+
+Mortalidad de reproductores=
+	Reproductores*0.02
+	~	plantas/año
+	~		|
+
+Natalidad=
+	Reproductores*0.03
+	~	plantas/año
+	~		|
+
+Mortalidad de ancianos=
+	Ancianos/100
+	~	plantas/año
+	~		|
+
+jovenes a reproductores=
+	Jovenes/50
+	~	plantas/año
+	~		|
+
+reproductores a ancianos=
+	Reproductores/100
+	~	plantas/año
+	~		|
+
+Mortalidad de jovenes=
+	Jovenes*0.3
+	~	plantas/año
+	~		|
+
+Total poblacion=
+	Reproductores+Jovenes+Ancianos
+	~	plantas
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 2100
+	~	Year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 2000
+	~	Year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Year
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Year
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,99,0
+10,1,Jovenes,207,261,73,28,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,2,Reproductores,485,262,69,30,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,3,Ancianos,782,261,95,28,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,4,6,2,4,0,0,22,1,0,0,0-0-0,|||0-0-0,1|(388,255)|
+1,5,6,1,100,0,0,22,1,0,0,0-0-0,|||0-0-0,1|(314,255)|
+11,6,0,355,255,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,jovenes a reproductores,355,286,66,23,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,8,10,3,4,0,0,22,1,0,0,0-0-0,|||0-0-0,1|(657,260)|
+1,9,10,2,100,0,0,22,1,0,0,0-0-0,|||0-0-0,1|(584,260)|
+11,10,0,621,260,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,11,reproductores a ancianos,621,291,66,23,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,12,48,192,150,25,15,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,13,15,1,4,0,0,22,1,0,0,0-0-0,|||0-0-0,1|(192,221)|
+1,14,15,12,100,0,0,22,1,0,0,0-0-0,|||0-0-0,1|(192,179)|
+11,15,0,192,202,6,8,34,3,0,0,4,0,0,0,0,0,0,0,0,0
+10,16,Natalidad,233,202,33,15,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,17,48,242,462,25,15,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,18,20,17,4,0,0,22,1,0,0,0-0-0,|||0-0-0,1|(242,426)|
+1,19,20,1,100,0,0,22,1,0,0,0-0-0,|||0-0-0,1|(242,341)|
+11,20,0,242,400,8,6,33,3,0,0,4,0,0,0,0,0,0,0,0,0
+10,21,Mortalidad de jovenes,307,400,57,17,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,22,1,21,1,0,0,0,3,64,0,0-0-255,|||0-0-0,1|(249,391)|
+1,23,2,16,1,0,0,0,3,64,0,0-0-255,|||0-0-0,1|(313,194)|
+1,24,1,7,1,0,0,0,3,64,0,0-0-255,|||0-0-0,1|(271,356)|
+1,25,2,11,1,0,0,0,3,64,0,0-0-255,|||0-0-0,1|(541,349)|
+12,26,48,847,496,25,15,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,27,29,26,4,0,0,22,1,0,0,0-0-0,|||0-0-0,1|(847,461)|
+1,28,29,3,100,0,0,22,1,0,0,0-0-0,|||0-0-0,1|(847,357)|
+11,29,0,847,434,6,8,34,3,0,0,2,0,0,0,0,0,0,0,0,0
+10,30,Mortalidad de ancianos,801,434,38,24,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,31,3,30,1,0,0,0,3,192,0,0-0-255,|||0-0-0,1|(804,358)|
+10,32,Total poblacion,480,100,75,30,0,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,33,1,32,1,0,0,0,3,64,0,0-0-255,|||0-0-0,1|(324,135)|
+1,34,2,32,1,0,0,0,0,64,0,-1--1--1,,1|(495,173)|
+1,35,3,32,1,0,0,0,3,64,0,0-0-255,|||0-0-0,1|(714,184)|
+12,36,48,527,480,25,15,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,37,39,36,4,0,0,22,1,0,0,0-0-0,|||0-0-0,1|(527,448)|
+1,38,39,2,100,0,0,22,1,0,0,0-0-0,|||0-0-0,1|(527,356)|
+11,39,0,527,426,8,6,33,3,0,0,4,0,0,0,0,0,0,0,0,0
+10,40,Mortalidad de reproductores,589,426,54,23,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,41,2,40,1,0,0,0,3,64,0,0-0-255,|||0-0-0,1|(508,399)|
+12,42,48,444,485,25,15,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,43,45,2,100,0,0,22,0,192,0,-1--1--1,,1|(444,314)|
+1,44,45,42,4,0,0,22,0,192,0,-1--1--1,,1|(444,409)|
+11,45,0,444,343,8,6,33,3,0,0,2,0,0,0,0,0,0,0,0,0
+10,46,Incendio reproductores,389,343,47,34,40,3,0,2,-1,0,0,0,-1--1--1,-1--1--1,|||245-51-18,0,0,0,0,0,0
+12,47,48,155,457,25,15,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,48,50,1,100,0,0,22,0,192,0,-1--1--1,,1|(155,302)|
+1,49,50,47,4,0,0,22,0,192,0,-1--1--1,,1|(155,386)|
+11,50,0,155,323,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,51,incendio jovenes,155,359,41,28,40,3,0,2,2,0,0,0,-1--1--1,-1--1--1,|||245-51-18,0,0,0,0,0,0
+12,52,48,733,527,25,15,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,53,55,3,100,0,0,22,0,192,0,-1--1--1,,1|(733,331)|
+1,54,55,52,4,0,0,22,0,192,0,-1--1--1,,1|(733,449)|
+11,55,0,733,380,8,6,33,3,0,0,4,0,0,0,0,0,0,0,0,0
+10,56,incendio ancianos,786,380,45,26,40,3,0,2,2,0,0,0,-1--1--1,-1--1--1,|||245-51-18,0,0,256,0,0,0
+1,57,1,51,1,0,0,0,0,192,0,-1--1--1,,1|(86,316)|
+1,58,2,46,1,0,0,0,0,192,0,-1--1--1,,1|(387,313)|
+1,59,3,56,1,0,0,0,0,192,0,-1--1--1,,1|(675,338)|
+10,60,Anio perturbacion,493,637,46,23,8,3,0,2,-1,0,0,0,-1--1--1,-1--1--1,|||245-51-18,0,0,0,0,0,0
+1,61,60,51,1,0,0,0,1,192,0,245-51-18,|||0-0-0,1|(313,566)|
+1,62,60,46,1,0,0,0,1,192,0,255-0-0,|||0-0-0,1|(387,375)|
+1,63,60,56,1,0,0,0,1,192,0,245-51-18,|||0-0-0,1|(689,555)|
+///---\\\
+:L<%^E!@
+4:Time
+5:Ancianos
+9:unodostrescuatrrocincoseis
+19:99,0
+24:2000
+25:2100
+26:2100
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:0
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Arial Unicode MS|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
