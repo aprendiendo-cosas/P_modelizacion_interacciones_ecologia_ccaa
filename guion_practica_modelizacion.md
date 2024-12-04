@@ -263,7 +263,7 @@ Se definen unas tasas de paso entre cada una de esas categorías. Además, cada 
 
 La siguiente imagen muestra la estructura del modelo en Vensim.
 
-![modelo_estructura](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/2022-2023/imagenes/modelo_estructura_edades.png)
+![modelo_estructura](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/main/imagenes/modelo_estructura_edades.png)
 
 
 
