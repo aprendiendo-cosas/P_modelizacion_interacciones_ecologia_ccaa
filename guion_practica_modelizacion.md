@@ -265,9 +265,126 @@ La siguiente imagen muestra la estructura del modelo en Vensim.
 
 ![modelo_estructura](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/main/imagenes/modelo_estructura_edades.png)
 
+Los parámetros del modelo son diferentes para cada tipo de ecosistema. He creado yo esos parámetros a mano basándome en mi conocimiento de los ecosistemas y con algo de ayuda de ChatGPT... La siguiente gráfica muestra los valores de cada parámetro en cada modelo.
 
 
 
+![parametros](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/main/imagenes/grafica_parametros.png)
+
+En las siguientes secciones podrás descargar el modelo correspondiente a tu ecosistema, así como ver preguntas concretas que deberéis abordar. Los resultados obtenidos servirán para el trabajo de prácticas que nos permitirá caracterizar los distintos tipos de ecosistemas de Sierra Nevada.
+
+### Encinares
+
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/refs/heads/main/descargables/encinar.mdl.zip) puedes descargar el modelo para encinar que tiene los siguientes parámetros:
+
++ Natalidad: 0.07
++ Mortalidad jóvenes: 0.025
++ Jovenes a reproductores: 1/20
++ Mortalidad reproductores: 0.02
++ Reproductores a ancianos: 1/50
++ Mortalidad ancianos: 1/10
+
+Para obtener información relevante sobre los encinares de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
+
++ Basándoos en el histograma generado en las prácticas anteriores, debéis de completar el número de jóvenes, reproductores y viejos del modelo de Vensim. Estos parámetros están vacíos en el archivo descargado más arriba. Es importante tener en cuenta que el número total de individuos al inicio debe de ser 100. Es decir, estimad las abundancias relativas de cada clase asumiendo este número total.
++ Ejecuta el modelo con los datos que consideres y sin perturbaciones. Guarda las gráficas e interpreta los resultados. Las siguientes preguntas pueden ser una guía para esto:
+  + ¿Podemos decir que el histograma obtenido corresponde con una población estable? ¿crece, se mantiene o se reduce el número de individuos al final de la ejecución del modelo?
+  + ¿Qué estructura tiene la población al final de la ejecución del modelo? ¿se parece a la inicial?
++ Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
+  + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
++ Imaginemos ahora que en lugar de un encinar como tal, estamos en una dehesa. Es decir, es un ecosistema en el que solo hay adultos e individuos viejos. No hay jóvenes. Además, no hay natalidad puesto que el ganado que pasta en la dehesa no permite que las encinas se reproduzcan. Cambia los valores iniciales de jóvenes, adultos y viejos para ver qué ocurre:
+  + ¿Es ahora estable la población o tiende a desaparecer?
+  + ¿Qué pasa si añadimos una perturbación en estas nuevas condiciones? ¿Se recupera la población?
+
+
+
+### Enebral-piornal
+
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/refs/heads/main/descargables/enebral.mdl.zip) puedes descargar el modelo para los enebrales-piornales que tiene los siguientes parámetros:
+
++ Natalidad: 0.07
++ Mortalidad jóvenes: 0.3
++ Jovenes a reproductores: 1/50
++ Mortalidad reproductores: 0.02
++ Reproductores a ancianos: 1/100
++ Mortalidad ancianos: 1/100
+
+Para obtener información relevante sobre los enebrales de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
+
++ Basándoos en el histograma generado en las prácticas anteriores, debéis de completar el número de jóvenes, reproductores y viejos del modelo de Vensim. Estos parámetros están vacíos en el archivo descargado más arriba. Es importante tener en cuenta que el número total de individuos al inicio debe de ser 100. Es decir, estimad las abundancias relativas de cada clase asumiendo este número total.
++ Ejecuta el modelo con los datos que consideres y sin perturbaciones. Guarda las gráficas e interpreta los resultados. Las siguientes preguntas pueden ser una guía para esto:
+  + ¿Podemos decir que el histograma obtenido corresponde con una población estable? ¿crece, se mantiene o se reduce el número de individuos al final de la ejecución del modelo?
+  + ¿Qué estructura tiene la población al final de la ejecución del modelo? ¿se parece a la inicial?
++ Si la población no es estable, ¿a qué parámetro del modelo crees que se debe? O dicho de otra forma, ¿cuál crees que es el factor limitante de esta especie? Cambia ese parámetro y vuelve a ejecutar el modelo para ver qué ocurre.
++ Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
+  + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
+
+### Pinares de repoblación
+
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/refs/heads/main/descargables/pinar.mdl.zip) puedes descargar el modelo para los pinares de repoblación que tiene los siguientes parámetros:
+
++ Natalidad: 0.003
++ Mortalidad jóvenes: 0.3
++ Jovenes a reproductores: 1/50
++ Mortalidad reproductores: 0.02
++ Reproductores a ancianos: 1/100
++ Mortalidad ancianos: 1/100
+
+Para obtener información relevante sobre los pinares de repoblación de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
+
++ Basándoos en el histograma generado en las prácticas anteriores, debéis de completar el número de jóvenes, reproductores y viejos del modelo de Vensim. Estos parámetros están vacíos en el archivo descargado más arriba. Es importante tener en cuenta que el número total de individuos al inicio debe de ser 100. Es decir, estimad las abundancias relativas de cada clase asumiendo este número total.
++ Ejecuta el modelo con los datos que consideres y sin perturbaciones. Guarda las gráficas e interpreta los resultados. Las siguientes preguntas pueden ser una guía para esto:
+  + ¿Podemos decir que el histograma obtenido corresponde con una población estable? ¿crece, se mantiene o se reduce el número de individuos al final de la ejecución del modelo?
+  + ¿Qué estructura tiene la población al final de la ejecución del modelo? ¿se parece a la inicial?
++ Si la población no es estable, ¿a qué parámetro del modelo crees que se debe? O dicho de otra forma, ¿cuál crees que es el factor limitante de esta especie? Cambia ese parámetro y vuelve a ejecutar el modelo para ver qué ocurre.
++ Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
+  + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
+
+### Pastizales alpinos
+
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/refs/heads/main/descargables/pastizal.mdl.zip) puedes descargar el modelo para pastizales alpinos que tiene los siguientes parámetros:
+
++ Natalidad: 0.05
++ Mortalidad jóvenes: 0.5
++ Jovenes a reproductores: 1/3
++ Mortalidad reproductores: 0.001
++ Reproductores a ancianos: 1/70
++ Mortalidad ancianos: 1/10
+
+Para obtener información relevante sobre los pastizales alpinos de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
+
++ Basándoos en el histograma generado en las prácticas anteriores, debéis de completar el número de jóvenes, reproductores y viejos del modelo de Vensim. Estos parámetros están vacíos en el archivo descargado más arriba. Es importante tener en cuenta que el número total de individuos al inicio debe de ser 100. Es decir, estimad las abundancias relativas de cada clase asumiendo este número total.
++ Ejecuta el modelo con los datos que consideres y sin perturbaciones. Guarda las gráficas e interpreta los resultados. Las siguientes preguntas pueden ser una guía para esto:
+  + ¿Podemos decir que el histograma obtenido corresponde con una población estable? ¿crece, se mantiene o se reduce el número de individuos al final de la ejecución del modelo?
+  + ¿Qué estructura tiene la población al final de la ejecución del modelo? ¿se parece a la inicial?
++ Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
+  + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
+  + ¿Qué pasa si la perturbación afecta únicamente a los reproductores?
+  + ¿Se recupera este ecosistema más rápidamente o más lentamente que el resto de ecosistemas? para contestar a esta pregunta pide las gráficas a tus compañeros de otros grupos.
+
+
+
+### Bosque de ribera
+
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/refs/heads/main/descargables/bosque_ribera.mdl.zip) puedes descargar el modelo para los bosques de ribera que tiene los siguientes parámetros:
+
++ Natalidad: 0.05
++ Mortalidad jóvenes: 0.0001
++ Jovenes a reproductores: 1/3
++ Mortalidad reproductores: 0.01
++ Reproductores a ancianos: 1/70
++ Mortalidad ancianos: 1/5
+
+Para obtener información relevante sobre los bosques de ribera de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
+
++ Basándoos en el histograma generado en las prácticas anteriores, debéis de completar el número de jóvenes, reproductores y viejos del modelo de Vensim. Estos parámetros están vacíos en el archivo descargado más arriba. Es importante tener en cuenta que el número total de individuos al inicio debe de ser 100. Es decir, estimad las abundancias relativas de cada clase asumiendo este número total.
++ Ejecuta el modelo con los datos que consideres y sin perturbaciones. Guarda las gráficas e interpreta los resultados. Las siguientes preguntas pueden ser una guía para esto:
+  + ¿Podemos decir que el histograma obtenido corresponde con una población estable? ¿crece, se mantiene o se reduce el número de individuos al final de la ejecución del modelo?
+  + ¿A qué crees que se debe el comportamiento observado?
++ Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
+  + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
+  + ¿Qué pasa si hay varias perturbaciones durante la ejecución del modelo?
+  + ¿Se recupera este ecosistema más rápidamente o más lentamente que el resto de ecosistemas? para contestar a esta pregunta pide las gráficas a tus compañeros de otros grupos.
 
 
 + Objetivo: evaluar en qué medida el histograma que obtuvimos representa o no una dinámica poblacional estable
