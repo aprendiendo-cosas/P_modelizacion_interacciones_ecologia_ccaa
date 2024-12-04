@@ -268,6 +268,8 @@ La siguiente imagen muestra la estructura del modelo en Vensim.
 
 
 
+
+
 + Objetivo: evaluar en qué medida el histograma que obtuvimos representa o no una dinámica poblacional estable
 + Descripción del modelo
 + Descripción de los parámetros que cambian en los distintos ecosistemas
