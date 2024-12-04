@@ -127,7 +127,7 @@ Para construir el modelo empezamos haciendo lo siguiente:
 
 3. Creamos "tasa" llamada *Nacimientos conejos*. El punto de inicio debe de estar a la izquierda de la anterior y finaliza en *Nº conejos.*
 
-4. Crear variable llamada *Tasa natalidad conejos*
+4. Crear variable llamada *Tasa natalidad conejos*.
 
 5. Creamos "tasa" llamada *Muertes conejos*. Empieza en *Nº conejos* y termina a su derecha.
 
@@ -242,7 +242,31 @@ Haremos los siguientes experimentos en el modelo anterior:
 + Según hemos visto, ¿qué pasaría si eliminarámos todos los *Balanus* e impidiésemos su reprodución? ¿Y si hacemos lo mismo con "*Chthalamadus*".
 
 
+
 ## 7. Modelo de dinámica poblacional de los ecosistema de Sierra Nevada
+
+Si has leído el guión hasta aquí y has hecho lo que en él se indica, te habrás familiarizado con el uso de Vensim. Desde un punto de vista de la ecología, habrás comprobado cómo las poblaciones de las especies estudiadas se hacen más estables conforme se van añadiendo interacciones interespecíficas.
+
+Los modelos que hemos visto hasta ahora simulan en lapsos de tiempo pequeños cómo evolucionan las poblaciones de varias especies. Las ecuaciones matemáticas que rigen estos modelos son las que hemos visto en teoría y en prácticas: la exponencial, la logística, las que describen la depredación, etc. A partir de aquí la situación es diferente. 
+
+En esta sección analizaremos cómo cambia la estructura de edades de una población a lo largo del tiempo. Trabajaremos con una única especie y veremos cómo, a lo largo del tiempo, va cambiando el número de jóvenes, organismos reproductores y organismos senescentes (viejos). Esto nos permitirá "animar" un histograma de tamaños o de edades de una población para saber cuál sería su comportamiento a lo largo del tiempo. Cuando estudiamos en teoría las pirámides poblacionales vimos cómo, por ejemplo, la estructura poblacional de México tenía más jóvenes que la de Suecia. Esto nos hizo pensar que el primer país tenía una demografía más "fuerte" y que encaraba el paso del tiempo con más probabilidad de supervivencia. 
+
+El objetivo de esta actividad es simular cómo podría evolucionar una población determinada a partir de los datos mostrados en el histograma de frecuencias generado en la práctica correspondiente. Esto nos permitirá saber si le histograma obtenido en su momento corresponde con una población en equilibrio, que tiende a crecer o que está en declive. 
+
+Para lograr este objetivo trabajaremos con un modelo de Vensim que tiene las siguientes variables de estado (Stocks):
+
++ Número de juveniles.
++ Número de reproductores.
++ Número de senescentes o viejos.
+
+Se definen unas tasas de paso entre cada una de esas categorías. Además, cada categoría tiene una tasa de mortalidad concreta. Una última variable importante relacionada con la demografía de la población es la natalidad, que aplica únicamente a los juveniles (lógicamente). Por último, hay un factor externo que reduce la población de las tres clases de edad en un 30%. Esta perturbación externa ocurre solo una vez en un año a elegir por el usuario (el modelo se ejecuta de 2000 a 2100).
+
+La siguiente imagen muestra la estructura del modelo en Vensim.
+
+![modelo_estructura](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/2022-2023/imagenes/modelo_estructura_edades.png)
+
+
+
 
 + Objetivo: evaluar en qué medida el histograma que obtuvimos representa o no una dinámica poblacional estable
 + Descripción del modelo
