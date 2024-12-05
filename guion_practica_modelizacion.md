@@ -245,7 +245,7 @@ Haremos los siguientes experimentos en el modelo anterior:
 
 ## 7. Modelo de dinámica poblacional de los ecosistema de Sierra Nevada
 
-Si has leído el guión hasta aquí y has hecho lo que en él se indica, te habrás familiarizado con el uso de Vensim. Desde un punto de vista de la ecología, habrás comprobado cómo las poblaciones de las especies estudiadas se hacen más estables conforme se van añadiendo interacciones interespecíficas.
+Si has leído el guión hasta aquí y has hecho lo que en él se indica, te habrás familiarizado con el uso de Vensim. Si has ejecutado los modelos anteriores, habrás comprobado cómo las poblaciones de las especies estudiadas se hacen más estables conforme se van añadiendo interacciones interespecíficas.
 
 Los modelos que hemos visto hasta ahora simulan en lapsos de tiempo pequeños cómo evolucionan las poblaciones de varias especies. Las ecuaciones matemáticas que rigen estos modelos son las que hemos visto en teoría y en prácticas: la exponencial, la logística, las que describen la depredación, etc. A partir de aquí la situación es diferente. 
 
@@ -265,7 +265,7 @@ La siguiente imagen muestra la estructura del modelo en Vensim.
 
 ![modelo_estructura](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/main/imagenes/modelo_estructura_edades.png)
 
-Los parámetros del modelo son diferentes para cada tipo de ecosistema. He creado yo esos parámetros a mano basándome en mi conocimiento de los ecosistemas y con algo de ayuda de ChatGPT... La siguiente gráfica muestra los valores de cada parámetro en cada modelo.
+Los parámetros del modelo son diferentes para cada tipo de ecosistema. He asignado esos parámetros a mano basándome en mi conocimiento de los ecosistemas y con algo de ayuda de ChatGPT... La siguiente gráfica muestra los valores de cada parámetro en cada modelo.
 
 
 
@@ -292,7 +292,7 @@ Para obtener información relevante sobre los encinares de Sierra Nevada en esta
   + ¿Qué estructura tiene la población al final de la ejecución del modelo? ¿se parece a la inicial?
 + Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
   + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
-+ Imaginemos ahora que en lugar de un encinar como tal, estamos en una dehesa. Es decir, es un ecosistema en el que solo hay adultos e individuos viejos. No hay jóvenes. Además, no hay natalidad puesto que el ganado que pasta en la dehesa no permite que las encinas se reproduzcan. Cambia los valores iniciales de jóvenes, adultos y viejos para ver qué ocurre:
++ Imaginemos ahora que en lugar de un encinar como tal, estamos en una dehesa. Es decir, es un ecosistema en el que solo hay adultos e individuos viejos. No hay jóvenes. Además, no hay natalidad puesto que el ganado que pasta en la dehesa no permite que las encinas se reproduzcan. Cambia los valores iniciales de jóvenes, adultos y viejos para ver qué ocurre. También tendrás que suprimir o reducir mucho la tasa de natalidad:
   + ¿Es ahora estable la población o tiende a desaparecer?
   + ¿Qué pasa si añadimos una perturbación en estas nuevas condiciones? ¿Se recupera la población?
 
@@ -319,6 +319,8 @@ Para obtener información relevante sobre los enebrales de Sierra Nevada en esta
 + Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
   + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
 
+
+
 ### Pinares de repoblación
 
 [Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/refs/heads/main/descargables/pinar.mdl.zip) puedes descargar el modelo para los pinares de repoblación que tiene los siguientes parámetros:
@@ -339,6 +341,8 @@ Para obtener información relevante sobre los pinares de repoblación de Sierra 
 + Si la población no es estable, ¿a qué parámetro del modelo crees que se debe? O dicho de otra forma, ¿cuál crees que es el factor limitante de esta especie? Cambia ese parámetro y vuelve a ejecutar el modelo para ver qué ocurre.
 + Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
   + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
+
+
 
 ### Pastizales alpinos
 
@@ -383,14 +387,12 @@ Para obtener información relevante sobre los bosques de ribera de Sierra Nevada
   + ¿A qué crees que se debe el comportamiento observado?
 + Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
   + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
-  + ¿Qué pasa si hay varias perturbaciones durante la ejecución del modelo?
+  + ¿Qué pasa si hay varias perturbaciones durante la ejecución del modelo? Para comprobar el efecto de esto, descarga [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/refs/heads/main/descargables/bosque_ribera_3_perturbaciones.mdl.zip) modelo en el que ya he implementado tres perturbaciones. Cambia las fechas y la intensidad si quieres. ¿A qué crees que se debe el comportamiento de esta población frente a las perturbaciones?
   + ¿Se recupera este ecosistema más rápidamente o más lentamente que el resto de ecosistemas? para contestar a esta pregunta pide las gráficas a tus compañeros de otros grupos.
 
 
-+ Objetivo: evaluar en qué medida el histograma que obtuvimos representa o no una dinámica poblacional estable
-+ Descripción del modelo
-+ Descripción de los parámetros que cambian en los distintos ecosistemas
-+ Preguntas concretas para cada tipo de ecosistema
+
+
 
 
 
