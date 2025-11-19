@@ -1,12 +1,13 @@
 # Modelización de las interacciones ecológicas. Desde el crecimiento exponencial hasta las relaciones interespecíficas
 
 > + **_Tipo de material_**: <span style="display: inline-block; font-size: 12px; color: white; background-color: #4caf50; border-radius: 5px; padding: 5px; font-weight: bold;"> Prácticas</span> 
-> + **_Versión_**: 2024-2025
+> + **_Versión_**: 2025-2026
 > + **_Asignatura (grado)_**: Ecología (Ciencias ambientales). 
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
-> + **_Duración_**: Una sesión de 1.5 horas en clase y otras 1.5 horas en casa.
+> + **_Duración_**: Una sesión de 2 horas en clase y otras 1.5 horas en casa.
 
-![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/tags/2024_2025/imagenes/portada.png)
+![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/heads/main/imagenes/portada.png)
+
 
 ## Objetivos
 
@@ -34,10 +35,10 @@ Esta práctica tiene los siguientes objetivos:
 
 El contexto ecológico de esta práctica es el bloque de temas de teoría en los que abordamos la dinámica poblacional y las interacciones interespecíficas. En concreto, para entender bien lo que hacemos aquí deberás estar familiarizado con los siguientes temas:
 
-+ [Aspectos generales sobre poblaciones ecológicas.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_ecologia_ccaa/2024_2025/guion_poblaciones_general.html)
-+ [Competencia intraespecífica.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_comp_intra_ecologia_ccaa/2024_2025/guion_competencia_intraespecifica.html)
++ [Aspectos generales sobre poblaciones ecológicas.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_ecologia_ccaa/2025_2026/guion_poblaciones_general.html)
++ [Competencia intraespecífica.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_comp_intra_ecologia_ccaa/2025_2026/guion_competencia_intraespecifica.html)
 + [Interacciones ecológicas. Depredación.](https://rawcdn.githack.com/aprendiendo-cosas/Te_depredacion_ecologia_ccaa/2024_2025/guion_depredacion.html) En clase vimos solo la parte "teórica" de este tema. En el guión tienes todo el material.
-+ [Interacciones ecológicas. Competencia interespecífica](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/2024_2025/guion_competencia_interespecifica.html). Competencia interespecífica. 
++ [Interacciones ecológicas. Competencia interespecífica](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/main/guion_competencia_interespecifica.html). Competencia interespecífica. 
 
 
 
@@ -243,7 +244,9 @@ Haremos los siguientes experimentos en el modelo anterior:
 
 
 
-## 7. Modelo de dinámica poblacional de los ecosistema de Sierra Nevada
+
+
+## 7. Conexión de la práctica con el trabajo sobre tipos de ecosistemas
 
 Si has leído el guión hasta aquí y has hecho lo que en él se indica, te habrás familiarizado con el uso de Vensim. Si has ejecutado los modelos anteriores, habrás comprobado cómo las poblaciones de las especies estudiadas se hacen más estables conforme se van añadiendo interacciones interespecíficas.
 
@@ -251,7 +254,7 @@ Los modelos que hemos visto hasta ahora simulan en lapsos de tiempo pequeños c�
 
 En esta sección analizaremos cómo cambia la estructura de edades de una población a lo largo del tiempo. Trabajaremos con una única especie y veremos cómo, a lo largo del tiempo, va cambiando el número de jóvenes, organismos reproductores y organismos senescentes (viejos). Esto nos permitirá "animar" un histograma de tamaños o de edades de una población para saber cuál sería su comportamiento a lo largo del tiempo. Cuando estudiamos en teoría las pirámides poblacionales vimos cómo, por ejemplo, la estructura poblacional de México tenía más jóvenes que la de Suecia. Esto nos hizo pensar que el primer país tenía una demografía más "fuerte" y que encaraba el paso del tiempo con más probabilidad de supervivencia. 
 
-El objetivo de esta actividad es simular cómo podría evolucionar una población determinada a partir de los datos mostrados en el histograma de frecuencias generado en la práctica correspondiente. Esto nos permitirá saber si le histograma obtenido en su momento corresponde con una población en equilibrio, que tiende a crecer o que está en declive. 
+El objetivo de esta actividad es simular cómo podría evolucionar una población determinada a partir de los datos mostrados en el histograma de frecuencias generado en [esta](https://raw.githack.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/2025_2026/guion_estructura_poblaciones.html). Esto nos permitirá saber si le histograma obtenido en su momento corresponde con una población en equilibrio, que tiende a crecer o que está en declive. 
 
 Para lograr este objetivo trabajaremos con un modelo de Vensim que tiene las siguientes variables de estado (Stocks):
 
@@ -259,17 +262,24 @@ Para lograr este objetivo trabajaremos con un modelo de Vensim que tiene las sig
 + Número de reproductores.
 + Número de senescentes o viejos.
 
-Se definen unas tasas de paso entre cada una de esas categorías. Además, cada categoría tiene una tasa de mortalidad concreta. Una última variable importante relacionada con la demografía de la población es la natalidad, que aplica únicamente a los juveniles (lógicamente). Por último, hay un factor externo que reduce la población de las tres clases de edad en un 30%. Esta perturbación externa ocurre solo una vez en un año a elegir por el usuario (el modelo se ejecuta de 2000 a 2100).
+También se definen unas tasas de paso entre cada una de esas categorías. Además, cada categoría tiene una tasa de mortalidad concreta. Una última variable importante relacionada con la demografía de la población es la natalidad, que aplica únicamente a los juveniles (lógicamente). Por último, hay un factor externo que reduce la población de las tres clases de edad en un 30%. Esta perturbación externa ocurre solo una vez en un año a elegir por el usuario (el modelo se ejecuta de 2000 a 2100).
 
 La siguiente imagen muestra la estructura del modelo en Vensim.
 
 ![modelo_estructura](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/tags/2024_2025/imagenes/modelo_estructura_edades.png)
 
-Los parámetros del modelo son diferentes para cada tipo de ecosistema. He asignado esos parámetros a mano basándome en mi conocimiento de los ecosistemas y con algo de ayuda de ChatGPT... La siguiente gráfica muestra los valores de cada parámetro en cada modelo.
+Los parámetros del modelo son diferentes para cada tipo de ecosistema. He asignado esos parámetros a mano basándome en mi conocimiento de los ecosistemas y con algo de ayuda de ChatGPT... La siguiente tabla muestra los valores de cada parámetro en cada modelo.
 
-
-
-![parametros](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/tags/2024_2025/imagenes/grafica_parametros.png)
+|                   Ecosistema | Natalidad | Mortalidad jóvenes | Jóvenes → Reproductores | Mortalidad Reproductores | Reproductores → Ancianos | Mortalidad Ancianos |
+| ---------------------------: | --------: | -----------------: | ----------------------: | -----------------------: | -----------------------: | ------------------: |
+|                      Encinar |    0.0700 |             0.0250 |                  0.0500 |                   0.0200 |                   0.0200 |              0.1000 |
+|              Enebral-piornal |    0.0700 |             0.3000 |                  0.0200 |                   0.0200 |                   0.0100 |              0.0100 |
+|       Pinares de repoblación |    0.0030 |             0.3000 |                  0.0200 |                   0.0200 |                   0.0100 |              0.0100 |
+|           Pastizales alpinos |    0.0500 |             0.5000 |                  0.3333 |                   0.0010 |                   0.0143 |              0.1000 |
+|             Bosque de ribera |    0.0500 |             0.0001 |                  0.3333 |                   0.0100 |                   0.0143 |              0.2000 |
+| Robledal (Quercus pyrenaica) |    0.0800 |             0.0200 |                  0.0667 |                   0.0150 |                   0.0250 |              0.1250 |
+|     Borreguiles alta montaña |    0.1000 |             0.6000 |                  0.5000 |                   0.0200 |                   0.2000 |              0.5000 |
+|       Matorral media montaña |    0.0400 |             0.2500 |                  0.0250 |                   0.0150 |                   0.0125 |              0.0500 |
 
 En las siguientes secciones podrás descargar el modelo correspondiente a tu ecosistema, así como ver preguntas concretas que deberéis abordar. Los resultados obtenidos servirán para el trabajo de prácticas que nos permitirá caracterizar los distintos tipos de ecosistemas de Sierra Nevada.
 
@@ -297,6 +307,38 @@ Para obtener información relevante sobre los encinares de Sierra Nevada en esta
   + ¿Qué pasa si añadimos una perturbación en estas nuevas condiciones? ¿Se recupera la población?
 
 
+
+### Robledales de *Quercus pyrenaica*
+
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2024_2025/descargables/encinar.mdl.zip) puedes descargar el modelo para en robledal que tiene los siguientes parámetros:
+
++ Natalidad: 0.07
++ Mortalidad jóvenes: 0.025
++ Jovenes a reproductores: 1/20
++ Mortalidad reproductores: 0.02
++ Reproductores a ancianos: 1/50
++ Mortalidad ancianos: 1/10
+
+Para obtener información relevante sobre los robledales de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
+
++ Basándoos en el histograma generado en las prácticas anteriores, debéis de completar el número de jóvenes, reproductores y viejos del modelo de Vensim. Estos parámetros están vacíos en el archivo descargado más arriba. Es importante tener en cuenta que el número total de individuos al inicio debe de ser 100. Es decir, estimad las abundancias relativas de cada clase asumiendo este número total.
+
++ Ejecuta el modelo con los datos que consideres y sin perturbaciones. Guarda las gráficas e interpreta los resultados. Las siguientes preguntas pueden ser una guía para esto:
+
+  + ¿Podemos decir que el histograma obtenido corresponde con una población estable? ¿crece, se mantiene o se reduce el número de individuos al final de la ejecución del modelo?
+  + ¿Qué estructura tiene la población al final de la ejecución del modelo? ¿se parece a la inicial?
+
++ Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
+
+  + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
+
++ Los encinares y los robledales tienen dinámicas ecológicas muy parecidas. Es interesante comparar los resultados obtenidos en estas dos especies. Así que busca a alguien que haya trabajado con encinares y pídele sus resultados. Compara lo que ha obtenido él o ella con tus resultados. Trata de responder a las siguientes preguntas:
+
+  + ¿Qué diferencias observas entre ambas especies en el resultado final tras ejecutar el modelo?
+  + ¿Qué crees que pesa más para explicar esas diferencias, las condiciones iniciales (los histogramas que se usan para el inicio del modelo) o las características de la especie (tasa de natalidad, mortalidad, etc.)?
+  + ¿Se recuperan de la perturbación los robledales antes o después que los encinares? ¿qué papel crees que puede tener la capacidad de rebrotar que tiene el roble en este conportamiento?
+
+  
 
 ### Enebral-piornal
 
