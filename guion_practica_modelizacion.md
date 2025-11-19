@@ -89,7 +89,7 @@ En esta práctica utilizaremos modelos temporalmente explícitos. En dichos mode
 
 Al igual que usamos los SIG para representar los cambios de ciertas variables ambientales en el domino del espacio, existen herramientas informáticas que nos permiten hacer lo mismo a lo largo del tiempo. Estas herramientas son las que usamos para generar modelos basados en procesos (la palabra proceso lleva implícita la componente temporal). En nuestro caso usaremos dos herramientas:
 + **Vensim** es una potente aplicación que permite simular multitud de situaciones de la realidad (no solo en el ámbito de la ecología, sino también en la ingeniería). Tiene una versión gratuita que puedes descargar [aquí ](https://vensim.com/free-download/#ple)(selecciona PLE y pon un correo. Te enviarán un mensaje con un enlace para descargar el instalable). Es una aplicación muy fácil de usar. Abajo tienes algunas pinceladas para iniciarte en su manejo:
-  + [Este](https://youtu.be/itB3IBESny0) vídeo muestra gráficamente los principales elementos del programa. 
+  + [Este](https://www.youtube.com/watch?v=XlVCUF7IzGI) vídeo muestra gráficamente los principales elementos del programa. 
   + En [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2024_2025/descargables/instrucciones_vensim.pdf) documento (preparado por el profesor Diego Jordano Barbudo) puedes ver una descripción detallada de las principales herramientas que usaremos de Vensim. 
   
 + **Stella** es muy parecido al anterior, pero no dispone de versión gratuita. No lo vamos a usar directamente, pero veremos algunos ejemplos de modelos hechos con esta herramienta que están disponibles en internet. 
@@ -158,11 +158,13 @@ Para construir el modelo empezamos haciendo lo siguiente:
 
 9. Guarda el modelo y dale este nombre: *1_conejo_exponencial.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/1_conejo_exponencial.mdl.zip) si no has podido construirlo correctamente. 
 
-10. Damos nombre a la ejecución: *conejo_exponencial_2_002* y la ejecutamos.
+10. Damos nombre a la ejecución: *conejo_exponencial_2_002* y la ejecutamos. Es importante darle nombre a las ejecuciones porque esto nos permite cambiar ciertos parámetros del modelo y guardar sus resultados en sitios diferentes. Esto nos permitirá ver varias gráficas con los distintos parámetros.
 
-11. Al ver la gráfica con el resultado ¿Cómo de rápido crece el número de conejos?, ¿por qué da la sensación de que solo crece a partir del año 2036?, ¿Cuántos conejos hay en el año 2020?. Para contestar a esta última pregunta puedes ver la tabla de datos generada por el modelo. Para ello basta con seleccionar la variable de estado *Nº conejos* y luego el botón "Table".
-12. Cambiamos la tasas de mortalidad del conejo: 0.05
-13. Damos nombre a la ejecución: *conejo_exponencial_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué diferencias hay entre las dos gráficas? ¿a qué se deben?
+11. Para ver los resultados, seleccionamos la herramienta llamada "move tool" (es una mano con flechas que salen del dedo índice). Con esa herramienta hacemos click en la variable de estado "nº de conejos". Así indicamos a Vensim que queremos ver información sobre cómo ha cambiado esa variable con el tiempo. Luego hacemos click sobre el botón que representa una gráfica roja. Está en la barra de botones de la izquierda.
+
+12. Al ver la gráfica con el resultado ¿Cómo de rápido crece el número de conejos?, ¿por qué da la sensación de que solo crece a partir del año 2036?, ¿Cuántos conejos hay en el año 2020?. Para contestar a esta última pregunta puedes ver la tabla de datos generada por el modelo. Para ello basta con seleccionar la variable de estado *Nº conejos* y luego el botón "Table".
+13. Cambiamos la tasas de mortalidad del conejo: 0.05
+14. Damos nombre a la ejecución: *conejo_exponencial_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué diferencias hay entre las dos gráficas? ¿a qué se deben?
 
 
 
@@ -347,7 +349,7 @@ Para obtener información relevante sobre los enebrales de Sierra Nevada en esta
 
 [Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/matorral.mdl.zip) puedes descargar el modelo para los enebrales-piornales que tiene los parámetros de la tabla anterior. 
 
-Para obtener información relevante sobre los enebrales de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
+Para obtener información relevante sobre los matorrales de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
 + Basándoos en el histograma generado en las prácticas anteriores, debéis de completar el número de jóvenes, reproductores y viejos del modelo de Vensim. Estos parámetros están vacíos en el archivo descargado más arriba. Es importante tener en cuenta que el número total de individuos al inicio debe de ser 100. Es decir, estimad las abundancias relativas de cada clase asumiendo este número total.
 + Ejecuta el modelo con los datos que consideres y sin perturbaciones. Guarda las gráficas e interpreta los resultados. Las siguientes preguntas pueden ser una guía para esto:
@@ -356,8 +358,6 @@ Para obtener información relevante sobre los enebrales de Sierra Nevada en esta
 + Si la población no es estable, ¿a qué parámetro del modelo crees que se debe? O dicho de otra forma, ¿cuál crees que es el factor limitante de esta especie? Cambia ese parámetro y vuelve a ejecutar el modelo para ver qué ocurre.
 + Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
   + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
-
-
 
 
 
@@ -379,7 +379,7 @@ Para obtener información relevante sobre los pinares de repoblación de Sierra 
 
 ### Pastizales alpinos
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/pastizal.mdl.zip) puedes descargar el modelo para pastizales alpinos que tiene los parámetros de la tabla anterior. 
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/pastizales.mdl.zip) puedes descargar el modelo para pastizales alpinos que tiene los parámetros de la tabla anterior. 
 
 Para obtener información relevante sobre los pastizales alpinos de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -413,9 +413,9 @@ Para obtener información relevante sobre los bosques de ribera de Sierra Nevada
 
 ### Borreguiles
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/bosque_ribera.mdl.zip) puedes descargar el modelo para los bosques de ribera que tiene los parámetros de la tabla anterior. 
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/borreguiles.mdl.zip) puedes descargar el modelo para los borreguiles que tiene los parámetros de la tabla anterior. 
 
-Para obtener información relevante sobre los bosques de ribera de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
+Para obtener información relevante sobre los estos ecosistemas en Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
 + Basándoos en el histograma generado en las prácticas anteriores, debéis de completar el número de jóvenes, reproductores y viejos del modelo de Vensim. Estos parámetros están vacíos en el archivo descargado más arriba. Es importante tener en cuenta que el número total de individuos al inicio debe de ser 100. Es decir, estimad las abundancias relativas de cada clase asumiendo este número total.
 + Ejecuta el modelo con los datos que consideres y sin perturbaciones. Guarda las gráficas e interpreta los resultados. Las siguientes preguntas pueden ser una guía para esto:
@@ -423,7 +423,6 @@ Para obtener información relevante sobre los bosques de ribera de Sierra Nevada
   + ¿A qué crees que se debe el comportamiento observado?
 + Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
   + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
-  + ¿Qué pasa si hay varias perturbaciones durante la ejecución del modelo? Para comprobar el efecto de esto, descarga [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/bosque_ribera_3_perturbaciones.mdl.zip) modelo en el que ya he implementado tres perturbaciones. Cambia las fechas y la intensidad si quieres. ¿A qué crees que se debe el comportamiento de esta población frente a las perturbaciones?
   + ¿Se recupera este ecosistema más rápidamente o más lentamente que el resto de ecosistemas? para contestar a esta pregunta pide las gráficas a tus compañeros de otros grupos.
 
 
