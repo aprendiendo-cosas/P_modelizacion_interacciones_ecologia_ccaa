@@ -124,15 +124,15 @@ Para construir el modelo empezamos haciendo lo siguiente:
     + Time step: indica la duración del lapso de tiempo mínimo que usa el modelo cuando se ejecuta. En nuestro caso usaremos 0.03125. Esto equivale a unos 10 días.
     + Units for time: Escribe "año".
 
-2. Crear variable de estado ("level") llamada *Nº conejos*.
+2. Crear variable de estado ("stock" o "level" según la versión) llamada *Nº conejos*.
 
-3. Creamos "tasa" llamada *Nacimientos conejos*. El punto de inicio debe de estar a la izquierda de la anterior y finaliza en *Nº conejos.*
+3. Creamos un flujo (flow Tool) llamada *Nacimientos conejos*. El punto de inicio debe de estar a la izquierda de la anterior y finaliza en *Nº conejos.*
 
 4. Crear variable llamada *Tasa natalidad conejos*.
 
-5. Creamos "tasa" llamada *Muertes conejos*. Empieza en *Nº conejos* y termina a su derecha.
+5. Creamos un flujo (flow tool) llamado *Muertes conejos*. Empieza en *Nº conejos* y termina a su derecha.
 
-6. Creamos variable llamada *Tasa mortalidad conejos*.
+6. Creamos variable (aunque sea constante) llamada *Tasa mortalidad conejos*.
 
 7. Mediante flechas conectamos los siguientes elementos:
 
@@ -156,7 +156,7 @@ Para construir el modelo empezamos haciendo lo siguiente:
 
       + *Tasa mortalidad conejos* = 0.02
 
-9. Guarda el modelo y dale este nombre: *1_conejo_exponencial.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2024_2025/descargables/1_conejo_exponencial.mdl.zip) si no has podido construirlo correctamente. 
+9. Guarda el modelo y dale este nombre: *1_conejo_exponencial.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/1_conejo_exponencial.mdl.zip) si no has podido construirlo correctamente. 
 
 10. Damos nombre a la ejecución: *conejo_exponencial_2_002* y la ejecutamos.
 
@@ -174,7 +174,7 @@ Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este
     1.1. Creamos variable *capacidad de carga* y le damos el valor de 2000 (usando el botón "equations").
     1.2. Conectamos esta nueva variable con *Nacimientos conejos*.
     1.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
-  15. Guardamos el modelo con otro nombre (save as): *2_conejo_logistico.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2024_2025/descargables/2_conejo_logistico.mdl.zip) si no has conseguido hacerlo. 
+  15. Guardamos el modelo con otro nombre (save as): *2_conejo_logistico.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/2_conejo_logistico.mdl.zip) si no has conseguido hacerlo. 
   15. Ahora cerramos vensim y, en el explorador de archivos, borramos todos los archivos que tengan extensión "vdfx". Esto hará que la gráfica que se crea con la nueva ejecución sea visible y no se solape con las que hemos hecho en los modelos anteriores.
   15. Damos nombre a la ejecución: *conejo_logistico_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué ves? 
 
@@ -218,7 +218,7 @@ Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este
 1.2. Conectamos esta nueva variable con *Nacimientos conejos*.
 1.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
 2. Damos nombre a la ejecución: *conejo_log_lince* y la ejecutamos. Vemos la gráfica del número de conejos y de linces. Puedes comparar los resultados de este modelo (con competencia intraespecífica para el conejo) con los del anterior (sin competencia intraespecífica). ¿cuál de las dos situaciones consideras que es más "estable"?
-3. Guardamos este nuevo modelo: *4_conejo_logistico_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2024_2025/descargables/4_conejo_logistico_lince.mdl.zip).
+3. Guardamos este nuevo modelo: *4_conejo_logistico_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/4_conejo_logistico_lince.mdl.zip).
 
 
 
@@ -256,7 +256,7 @@ En esta sección analizaremos cómo cambia la estructura de edades de una poblac
 
 El objetivo de esta actividad es simular cómo podría evolucionar una población determinada a partir de los datos mostrados en el histograma de frecuencias generado en [esta](https://raw.githack.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/2025_2026/guion_estructura_poblaciones.html). Esto nos permitirá saber si le histograma obtenido en su momento corresponde con una población en equilibrio, que tiende a crecer o que está en declive. 
 
-Para lograr este objetivo trabajaremos con un modelo de Vensim que tiene las siguientes variables de estado (Stocks):
+Para lograr este objetivo trabajaremos con un modelo de Vensim que tiene las siguientes variables de estado (Stocks o level, según la versión):
 
 + Número de juveniles.
 + Número de reproductores.
@@ -270,29 +270,23 @@ La siguiente imagen muestra la estructura del modelo en Vensim.
 
 Los parámetros del modelo son diferentes para cada tipo de ecosistema. He asignado esos parámetros a mano basándome en mi conocimiento de los ecosistemas y con algo de ayuda de ChatGPT... La siguiente tabla muestra los valores de cada parámetro en cada modelo.
 
-|                   Ecosistema | Natalidad | Mortalidad jóvenes | Jóvenes → Reproductores | Mortalidad Reproductores | Reproductores → Ancianos | Mortalidad Ancianos |
-| ---------------------------: | --------: | -----------------: | ----------------------: | -----------------------: | -----------------------: | ------------------: |
-|                      Encinar |    0.0700 |             0.0250 |                  0.0500 |                   0.0200 |                   0.0200 |              0.1000 |
-|              Enebral-piornal |    0.0700 |             0.3000 |                  0.0200 |                   0.0200 |                   0.0100 |              0.0100 |
-|       Pinares de repoblación |    0.0030 |             0.3000 |                  0.0200 |                   0.0200 |                   0.0100 |              0.0100 |
-|           Pastizales alpinos |    0.0500 |             0.5000 |                  0.3333 |                   0.0010 |                   0.0143 |              0.1000 |
-|             Bosque de ribera |    0.0500 |             0.0001 |                  0.3333 |                   0.0100 |                   0.0143 |              0.2000 |
-| Robledal (Quercus pyrenaica) |    0.0800 |             0.0200 |                  0.0667 |                   0.0150 |                   0.0250 |              0.1250 |
-|     Borreguiles alta montaña |    0.1000 |             0.6000 |                  0.5000 |                   0.0200 |                   0.2000 |              0.5000 |
-|       Matorral media montaña |    0.0400 |             0.2500 |                  0.0250 |                   0.0150 |                   0.0125 |              0.0500 |
+| Ecosistema                     | Natalidad | Mortalidad jóvenes | Jóvenes → Reproductores | Mortalidad Reproductores | Reproductores → Ancianos | Mortalidad Ancianos |
+|-------------------------------:|----------:|-------------------:|-------------------------:|--------------------------:|--------------------------:|---------------------:|
+| Encinar                        | 0.07      | 0.025              | 1/20                     | 0.02                      | 1/50                     | 1/10                 |
+| Enebral-piornal                | 0.07      | 0.30               | 1/50                     | 0.02                      | 1/100                    | 1/100                |
+| Pinares de repoblación         | 0.003     | 0.30               | 1/50                     | 0.02                      | 1/100                    | 1/100                |
+| Pastizales alpinos             | 0.05      | 0.50               | 1/3                      | 0.001                     | 1/70                     | 1/10                 |
+| Bosque de ribera               | 0.05      | 0.0001             | 1/3                      | 0.01                      | 1/70                     | 1/5                  |
+| Robledal (Quercus pyrenaica)   | 0.08      | 0.02               | 1/15                     | 0.015                     | 1/40                     | 1/8                  |
+| Borreguiles alta montaña       | 0.10      | 0.60               | 1/2                      | 0.02                      | 1/5                      | 1/2                  |
+| Matorral media montaña         | 0.04      | 0.25               | 1/40                     | 0.015                     | 1/80                     | 1/20                 |
+
 
 En las siguientes secciones podrás descargar el modelo correspondiente a tu ecosistema, así como ver preguntas concretas que deberéis abordar. Los resultados obtenidos servirán para el trabajo de prácticas que nos permitirá caracterizar los distintos tipos de ecosistemas de Sierra Nevada.
 
 ### Encinares
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2024_2025/descargables/encinar.mdl.zip) puedes descargar el modelo para encinar que tiene los siguientes parámetros:
-
-+ Natalidad: 0.07
-+ Mortalidad jóvenes: 0.025
-+ Jovenes a reproductores: 1/20
-+ Mortalidad reproductores: 0.02
-+ Reproductores a ancianos: 1/50
-+ Mortalidad ancianos: 1/10
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/encinar.mdl.zip) puedes descargar el modelo para encinar que tiene los parámetros mostrados en la tabla anterior. 
 
 Para obtener información relevante sobre los encinares de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -310,14 +304,7 @@ Para obtener información relevante sobre los encinares de Sierra Nevada en esta
 
 ### Robledales de *Quercus pyrenaica*
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2024_2025/descargables/encinar.mdl.zip) puedes descargar el modelo para en robledal que tiene los siguientes parámetros:
-
-+ Natalidad: 0.07
-+ Mortalidad jóvenes: 0.025
-+ Jovenes a reproductores: 1/20
-+ Mortalidad reproductores: 0.02
-+ Reproductores a ancianos: 1/50
-+ Mortalidad ancianos: 1/10
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/robledal.mdl.zip) puedes descargar el modelo para en robledal que tiene los parámetros mostrados en la tabla anterior.
 
 Para obtener información relevante sobre los robledales de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -342,14 +329,7 @@ Para obtener información relevante sobre los robledales de Sierra Nevada en est
 
 ### Enebral-piornal
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2024_2025/descargables/enebral.mdl.zip) puedes descargar el modelo para los enebrales-piornales que tiene los siguientes parámetros:
-
-+ Natalidad: 0.07
-+ Mortalidad jóvenes: 0.3
-+ Jovenes a reproductores: 1/50
-+ Mortalidad reproductores: 0.02
-+ Reproductores a ancianos: 1/100
-+ Mortalidad ancianos: 1/100
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/enebral.mdl.zip) puedes descargar el modelo para los enebrales-piornales que tiene los parámetros de la tabla anterior. 
 
 Para obtener información relevante sobre los enebrales de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -363,16 +343,27 @@ Para obtener información relevante sobre los enebrales de Sierra Nevada en esta
 
 
 
+### Matorrales de media montaña
+
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/matorral.mdl.zip) puedes descargar el modelo para los enebrales-piornales que tiene los parámetros de la tabla anterior. 
+
+Para obtener información relevante sobre los enebrales de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
+
++ Basándoos en el histograma generado en las prácticas anteriores, debéis de completar el número de jóvenes, reproductores y viejos del modelo de Vensim. Estos parámetros están vacíos en el archivo descargado más arriba. Es importante tener en cuenta que el número total de individuos al inicio debe de ser 100. Es decir, estimad las abundancias relativas de cada clase asumiendo este número total.
++ Ejecuta el modelo con los datos que consideres y sin perturbaciones. Guarda las gráficas e interpreta los resultados. Las siguientes preguntas pueden ser una guía para esto:
+  + ¿Podemos decir que el histograma obtenido corresponde con una población estable? ¿crece, se mantiene o se reduce el número de individuos al final de la ejecución del modelo?
+  + ¿Qué estructura tiene la población al final de la ejecución del modelo? ¿se parece a la inicial?
++ Si la población no es estable, ¿a qué parámetro del modelo crees que se debe? O dicho de otra forma, ¿cuál crees que es el factor limitante de esta especie? Cambia ese parámetro y vuelve a ejecutar el modelo para ver qué ocurre.
++ Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
+  + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
+
+
+
+
+
 ### Pinares de repoblación
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2024_2025/descargables/pinar.mdl.zip) puedes descargar el modelo para los pinares de repoblación que tiene los siguientes parámetros:
-
-+ Natalidad: 0.003
-+ Mortalidad jóvenes: 0.3
-+ Jovenes a reproductores: 1/50
-+ Mortalidad reproductores: 0.02
-+ Reproductores a ancianos: 1/100
-+ Mortalidad ancianos: 1/100
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/pinar.mdl.zip) puedes descargar el modelo para los pinares de repoblación que tienen los parámetros mostados en la tabla anterior. 
 
 Para obtener información relevante sobre los pinares de repoblación de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -388,14 +379,7 @@ Para obtener información relevante sobre los pinares de repoblación de Sierra 
 
 ### Pastizales alpinos
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2024_2025/descargables/pastizal.mdl.zip) puedes descargar el modelo para pastizales alpinos que tiene los siguientes parámetros:
-
-+ Natalidad: 0.05
-+ Mortalidad jóvenes: 0.5
-+ Jovenes a reproductores: 1/3
-+ Mortalidad reproductores: 0.001
-+ Reproductores a ancianos: 1/70
-+ Mortalidad ancianos: 1/10
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/pastizal.mdl.zip) puedes descargar el modelo para pastizales alpinos que tiene los parámetros de la tabla anterior. 
 
 Para obtener información relevante sobre los pastizales alpinos de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -412,14 +396,7 @@ Para obtener información relevante sobre los pastizales alpinos de Sierra Nevad
 
 ### Bosque de ribera
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2024_2025/descargables/bosque_ribera.mdl.zip) puedes descargar el modelo para los bosques de ribera que tiene los siguientes parámetros:
-
-+ Natalidad: 0.05
-+ Mortalidad jóvenes: 0.0001
-+ Jovenes a reproductores: 1/3
-+ Mortalidad reproductores: 0.01
-+ Reproductores a ancianos: 1/70
-+ Mortalidad ancianos: 1/5
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/bosque_ribera.mdl.zip) puedes descargar el modelo para los bosques de ribera que tiene los parámetros de la tabla anterior. 
 
 Para obtener información relevante sobre los bosques de ribera de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -429,12 +406,25 @@ Para obtener información relevante sobre los bosques de ribera de Sierra Nevada
   + ¿A qué crees que se debe el comportamiento observado?
 + Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
   + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
-  + ¿Qué pasa si hay varias perturbaciones durante la ejecución del modelo? Para comprobar el efecto de esto, descarga [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2024_2025/descargables/bosque_ribera_3_perturbaciones.mdl.zip) modelo en el que ya he implementado tres perturbaciones. Cambia las fechas y la intensidad si quieres. ¿A qué crees que se debe el comportamiento de esta población frente a las perturbaciones?
+  + ¿Qué pasa si hay varias perturbaciones durante la ejecución del modelo? Para comprobar el efecto de esto, descarga [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/bosque_ribera_3_perturbaciones.mdl.zip) modelo en el que ya he implementado tres perturbaciones. Cambia las fechas y la intensidad si quieres. ¿A qué crees que se debe el comportamiento de esta población frente a las perturbaciones?
   + ¿Se recupera este ecosistema más rápidamente o más lentamente que el resto de ecosistemas? para contestar a esta pregunta pide las gráficas a tus compañeros de otros grupos.
 
 
 
+### Borreguiles
 
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/bosque_ribera.mdl.zip) puedes descargar el modelo para los bosques de ribera que tiene los parámetros de la tabla anterior. 
+
+Para obtener información relevante sobre los bosques de ribera de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
+
++ Basándoos en el histograma generado en las prácticas anteriores, debéis de completar el número de jóvenes, reproductores y viejos del modelo de Vensim. Estos parámetros están vacíos en el archivo descargado más arriba. Es importante tener en cuenta que el número total de individuos al inicio debe de ser 100. Es decir, estimad las abundancias relativas de cada clase asumiendo este número total.
++ Ejecuta el modelo con los datos que consideres y sin perturbaciones. Guarda las gráficas e interpreta los resultados. Las siguientes preguntas pueden ser una guía para esto:
+  + ¿Podemos decir que el histograma obtenido corresponde con una población estable? ¿crece, se mantiene o se reduce el número de individuos al final de la ejecución del modelo?
+  + ¿A qué crees que se debe el comportamiento observado?
++ Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
+  + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
+  + ¿Qué pasa si hay varias perturbaciones durante la ejecución del modelo? Para comprobar el efecto de esto, descarga [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/bosque_ribera_3_perturbaciones.mdl.zip) modelo en el que ya he implementado tres perturbaciones. Cambia las fechas y la intensidad si quieres. ¿A qué crees que se debe el comportamiento de esta población frente a las perturbaciones?
+  + ¿Se recupera este ecosistema más rápidamente o más lentamente que el resto de ecosistemas? para contestar a esta pregunta pide las gráficas a tus compañeros de otros grupos.
 
 
 

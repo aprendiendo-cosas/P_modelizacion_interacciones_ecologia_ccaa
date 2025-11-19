@@ -67,27 +67,27 @@ Mortalidad de reproductores=
 	~		|
 
 Natalidad=
-	Reproductores*0.07
+	Reproductores*0.03
 	~	plantas/año
 	~		|
 
 Mortalidad de ancianos=
-	Ancianos/20
+	Ancianos/100
 	~	plantas/año
 	~		|
 
 jovenes a reproductores=
-	Jovenes/20
+	Jovenes/50
 	~	plantas/año
 	~		|
 
 reproductores a ancianos=
-	Reproductores/50
+	Reproductores/100
 	~	plantas/año
 	~		|
 
 Mortalidad de jovenes=
-	Jovenes*0.025
+	Jovenes*0.3
 	~	plantas/año
 	~		|
 
@@ -194,7 +194,7 @@ $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,9
 :L<%^E!@
 4:Time
 5:Ancianos
-9:encinar
+9:unodostrescuatrrocincoseis
 19:99,0
 24:2000
 25:2100
