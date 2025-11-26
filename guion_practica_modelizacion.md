@@ -4,9 +4,9 @@
 > + **_Versión_**: 2025-2026
 > + **_Asignatura (grado)_**: Ecología (Ciencias ambientales). 
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
-> + **_Duración_**: Una sesión de 2 horas en clase y otras 1.5 horas en casa.
+> + **_Duración_**: Dos sesiones de 2 horas en clase y otras 1.5 horas en casa.
 
-![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/heads/main/imagenes/portada.png)
+![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/tags/2025_2026/imagenes/portada.png)
 
 
 ## Objetivos
@@ -38,7 +38,7 @@ El contexto ecológico de esta práctica es el bloque de temas de teoría en los
 + [Aspectos generales sobre poblaciones ecológicas.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_ecologia_ccaa/2025_2026/guion_poblaciones_general.html)
 + [Competencia intraespecífica.](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_comp_intra_ecologia_ccaa/2025_2026/guion_competencia_intraespecifica.html)
 + [Interacciones ecológicas. Depredación.](https://rawcdn.githack.com/aprendiendo-cosas/Te_depredacion_ecologia_ccaa/2024_2025/guion_depredacion.html) En clase vimos solo la parte "teórica" de este tema. En el guión tienes todo el material.
-+ [Interacciones ecológicas. Competencia interespecífica](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/main/guion_competencia_interespecifica.html). Competencia interespecífica. 
++ [Interacciones ecológicas. Competencia interespecífica](https://rawcdn.githack.com/aprendiendo-cosas/Te_comp_inter_ecologia_ccaa/2025_2026/guion_competencia_interespecifica.html). Competencia interespecífica. 
 
 
 
@@ -50,7 +50,7 @@ En el proceso de construcción de un modelo, simpflificamos la realidad y "quita
 
 Sin embargo, al mismo tiempo ocurre que un modelo es tanto mejor cuanto más ajustado está a la realidad. Eso genera un aparente dilema que se resuelve indicando que cuando construimos un modelo establecemos una relación simétrica con la realidad. La siguiente figura muestra esta situación. 
 
-![modelo](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/tags/2024_2025/imagenes/simetria.png)
+![modelo](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/tags/2025_2026/imagenes/simetria.png)
 
 Esta simetría tiene varias implicaciones a efectos prácticos:
 
@@ -90,7 +90,7 @@ En esta práctica utilizaremos modelos temporalmente explícitos. En dichos mode
 Al igual que usamos los SIG para representar los cambios de ciertas variables ambientales en el domino del espacio, existen herramientas informáticas que nos permiten hacer lo mismo a lo largo del tiempo. Estas herramientas son las que usamos para generar modelos basados en procesos (la palabra proceso lleva implícita la componente temporal). En nuestro caso usaremos dos herramientas:
 + **Vensim** es una potente aplicación que permite simular multitud de situaciones de la realidad (no solo en el ámbito de la ecología, sino también en la ingeniería). Tiene una versión gratuita que puedes descargar [aquí ](https://vensim.com/free-download/#ple)(selecciona PLE y pon un correo. Te enviarán un mensaje con un enlace para descargar el instalable). Es una aplicación muy fácil de usar. Abajo tienes algunas pinceladas para iniciarte en su manejo:
   + [Este](https://www.youtube.com/watch?v=XlVCUF7IzGI) vídeo muestra gráficamente los principales elementos del programa. 
-  + En [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2024_2025/descargables/instrucciones_vensim.pdf) documento (preparado por el profesor Diego Jordano Barbudo) puedes ver una descripción detallada de las principales herramientas que usaremos de Vensim. 
+  + En [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/instrucciones_vensim.pdf) documento (preparado por el profesor Diego Jordano Barbudo) puedes ver una descripción detallada de las principales herramientas que usaremos de Vensim. 
   
 + **Stella** es muy parecido al anterior, pero no dispone de versión gratuita. No lo vamos a usar directamente, pero veremos algunos ejemplos de modelos hechos con esta herramienta que están disponibles en internet. 
 
@@ -106,9 +106,9 @@ En las siguientes secciones se muestran los distintos estados "evolutivos" de lo
 
 
 
-![modelos_vensim](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/tags/2024_2025/imagenes/modelos_vensim.png)
+![modelos_vensim](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/tags/2025_2026/imagenes/modelos_vensim.png)
 
-![modelos_vensim](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/tags/2024_2025/imagenes/experimentos.png)
+![modelos_vensim](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/tags/2025_2026/imagenes/experimentos.png)
 
 
 
@@ -156,7 +156,7 @@ Para construir el modelo empezamos haciendo lo siguiente:
 
       + *Tasa mortalidad conejos* = 0.02
 
-9. Guarda el modelo y dale este nombre: *1_conejo_exponencial.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/1_conejo_exponencial.mdl.zip) si no has podido construirlo correctamente. 
+9. Guarda el modelo y dale este nombre: *1_conejo_exponencial.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/1_conejo_exponencial.mdl.zip) si no has podido construirlo correctamente. 
 
 10. Damos nombre a la ejecución: *conejo_exponencial_2_002* y la ejecutamos. Es importante darle nombre a las ejecuciones porque esto nos permite cambiar ciertos parámetros del modelo y guardar sus resultados en sitios diferentes. Esto nos permitirá ver varias gráficas con los distintos parámetros.
 
@@ -176,7 +176,7 @@ Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este
     1.1. Creamos variable *capacidad de carga* y le damos el valor de 2000 (usando el botón "equations").
     1.2. Conectamos esta nueva variable con *Nacimientos conejos*.
     1.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
-  15. Guardamos el modelo con otro nombre (save as): *2_conejo_logistico.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/2_conejo_logistico.mdl.zip) si no has conseguido hacerlo. 
+  15. Guardamos el modelo con otro nombre (save as): *2_conejo_logistico.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/2_conejo_logistico.mdl.zip) si no has conseguido hacerlo. 
   15. Ahora cerramos vensim y, en el explorador de archivos, borramos todos los archivos que tengan extensión "vdfx". Esto hará que la gráfica que se crea con la nueva ejecución sea visible y no se solape con las que hemos hecho en los modelos anteriores.
   15. Damos nombre a la ejecución: *conejo_logistico_2_005* y la ejecutamos. Vemos la gráfica del número de conejos. ¿Qué ves? 
 
@@ -208,7 +208,7 @@ Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este
      + Modificar la ecuación de *Nacimientos linces* así: *Nº linces \* Tasa de natalidad linces \* Nº conejos*
      + Añadir flecha desde *Nº linces* hasta *Muertes conejos"
      + Modificar la ecuación de *Muertes conejos* así: *Nº conejos \* Tasa mortalidad conejos \* Nº linces*
-9. Guardamos el modelo con este nombre: *3_conejo_exponencial_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/3_conejo_exponencial_lince.mdl.zip).
+9. Guardamos el modelo con este nombre: *3_conejo_exponencial_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/3_conejo_exponencial_lince.mdl.zip).
 10. Nombramos la ejecución: *conejo_exp_lince* y la ejecutamos. Mostramos las gráficas de *Nº conejos* y *Nº linces* . ¿Cómo se interpretan las gráficas obtenidas? ¿qué diferencias ves respecto a las del modelo anterior?
 
 
@@ -220,7 +220,7 @@ Creamos un modelo de crecimiento logístico para el conejo. Contemplamos en este
 1.2. Conectamos esta nueva variable con *Nacimientos conejos*.
 1.3. Modificamos la ecuación de *Nacimientos conejos* para que incluya a la capacidad de carga: *Nº conejos \* Tasa de natalidad conejos \* (1-Nº conejos / Capacidad de carga)*.
 2. Damos nombre a la ejecución: *conejo_log_lince* y la ejecutamos. Vemos la gráfica del número de conejos y de linces. Puedes comparar los resultados de este modelo (con competencia intraespecífica para el conejo) con los del anterior (sin competencia intraespecífica). ¿cuál de las dos situaciones consideras que es más "estable"?
-3. Guardamos este nuevo modelo: *4_conejo_logistico_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/4_conejo_logistico_lince.mdl.zip).
+3. Guardamos este nuevo modelo: *4_conejo_logistico_lince.mdl*. Puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/4_conejo_logistico_lince.mdl.zip).
 
 
 
@@ -268,7 +268,7 @@ También se definen unas tasas de paso entre cada una de esas categorías. Adem�
 
 La siguiente imagen muestra la estructura del modelo en Vensim.
 
-![modelo_estructura](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/tags/2024_2025/imagenes/modelo_estructura_edades.png)
+![modelo_estructura](https://raw.githubusercontent.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/refs/tags/2025_2026/imagenes/modelo_estructura_edades.png)
 
 Los parámetros del modelo son diferentes para cada tipo de ecosistema. He asignado esos parámetros a mano basándome en mi conocimiento de los ecosistemas y con algo de ayuda de ChatGPT... La siguiente tabla muestra los valores de cada parámetro en cada modelo.
 
@@ -288,7 +288,7 @@ En las siguientes secciones podrás descargar el modelo correspondiente a tu eco
 
 ### Encinares
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/encinar.mdl.zip) puedes descargar el modelo para encinar que tiene los parámetros mostrados en la tabla anterior. 
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/encinar.mdl.zip) puedes descargar el modelo para encinar que tiene los parámetros mostrados en la tabla anterior. 
 
 Para obtener información relevante sobre los encinares de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -306,7 +306,7 @@ Para obtener información relevante sobre los encinares de Sierra Nevada en esta
 
 ### Robledales de *Quercus pyrenaica*
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/robledal.mdl.zip) puedes descargar el modelo para en robledal que tiene los parámetros mostrados en la tabla anterior.
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/robledal.mdl.zip) puedes descargar el modelo para en robledal que tiene los parámetros mostrados en la tabla anterior.
 
 Para obtener información relevante sobre los robledales de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -331,7 +331,7 @@ Para obtener información relevante sobre los robledales de Sierra Nevada en est
 
 ### Enebral-piornal
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/enebral.mdl.zip) puedes descargar el modelo para los enebrales-piornales que tiene los parámetros de la tabla anterior. 
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/enebral.mdl.zip) puedes descargar el modelo para los enebrales-piornales que tiene los parámetros de la tabla anterior. 
 
 Para obtener información relevante sobre los enebrales de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -347,7 +347,7 @@ Para obtener información relevante sobre los enebrales de Sierra Nevada en esta
 
 ### Matorrales de media montaña
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/matorral.mdl.zip) puedes descargar el modelo para los enebrales-piornales que tiene los parámetros de la tabla anterior. 
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/matorral.mdl.zip) puedes descargar el modelo para los enebrales-piornales que tiene los parámetros de la tabla anterior. 
 
 Para obtener información relevante sobre los matorrales de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -363,7 +363,7 @@ Para obtener información relevante sobre los matorrales de Sierra Nevada en est
 
 ### Pinares de repoblación
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/pinar.mdl.zip) puedes descargar el modelo para los pinares de repoblación que tienen los parámetros mostados en la tabla anterior. 
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/pinar.mdl.zip) puedes descargar el modelo para los pinares de repoblación que tienen los parámetros mostados en la tabla anterior. 
 
 Para obtener información relevante sobre los pinares de repoblación de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -379,7 +379,7 @@ Para obtener información relevante sobre los pinares de repoblación de Sierra 
 
 ### Pastizales alpinos
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/pastizales.mdl.zip) puedes descargar el modelo para pastizales alpinos que tiene los parámetros de la tabla anterior. 
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/pastizales.mdl.zip) puedes descargar el modelo para pastizales alpinos que tiene los parámetros de la tabla anterior. 
 
 Para obtener información relevante sobre los pastizales alpinos de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -396,7 +396,7 @@ Para obtener información relevante sobre los pastizales alpinos de Sierra Nevad
 
 ### Bosque de ribera
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/bosque_ribera.mdl.zip) puedes descargar el modelo para los bosques de ribera que tiene los parámetros de la tabla anterior. 
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/bosque_ribera.mdl.zip) puedes descargar el modelo para los bosques de ribera que tiene los parámetros de la tabla anterior. 
 
 Para obtener información relevante sobre los bosques de ribera de Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -406,14 +406,14 @@ Para obtener información relevante sobre los bosques de ribera de Sierra Nevada
   + ¿A qué crees que se debe el comportamiento observado?
 + Vuelve a ejecutar el modelo pero activando la perturbación. Cambia la fecha del parámetro "anio perturbacion" y pon algo diferente a 2100. Verás que el número de individuos se reduce en un 30%. Guarda las gráficas e interprétalas. Las siguientes preguntas pueden ayudarte:
   + ¿Se recupera la población? ¿qué pasa si cambias la fecha de la perturbación? ¿cambia también la velocidad de recuperación?
-  + ¿Qué pasa si hay varias perturbaciones durante la ejecución del modelo? Para comprobar el efecto de esto, descarga [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/bosque_ribera_3_perturbaciones.mdl.zip) modelo en el que ya he implementado tres perturbaciones. Cambia las fechas y la intensidad si quieres. ¿A qué crees que se debe el comportamiento de esta población frente a las perturbaciones?
+  + ¿Qué pasa si hay varias perturbaciones durante la ejecución del modelo? Para comprobar el efecto de esto, descarga [este](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/bosque_ribera_3_perturbaciones.mdl.zip) modelo en el que ya he implementado tres perturbaciones. Cambia las fechas y la intensidad si quieres. ¿A qué crees que se debe el comportamiento de esta población frente a las perturbaciones?
   + ¿Se recupera este ecosistema más rápidamente o más lentamente que el resto de ecosistemas? para contestar a esta pregunta pide las gráficas a tus compañeros de otros grupos.
 
 
 
 ### Borreguiles
 
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/main/descargables/borreguiles.mdl.zip) puedes descargar el modelo para los borreguiles que tiene los parámetros de la tabla anterior. 
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/raw/2025_2026/descargables/borreguiles.mdl.zip) puedes descargar el modelo para los borreguiles que tiene los parámetros de la tabla anterior. 
 
 Para obtener información relevante sobre los estos ecosistemas en Sierra Nevada en esta práctica tenéis que hacer lo siguiente:
 
@@ -436,7 +436,7 @@ Para obtener información relevante sobre los estos ecosistemas en Sierra Nevada
 
 
 ****
-[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/archive/refs/tags/2024_2025.zip) puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.
+[Aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/archive/refs/tags/2025_2026.zip) puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.
 
 ****
 Haz click [aquí](https://github.com/aprendiendo-cosas/P_modelizacion_interacciones_ecologia_ccaa/releases) para ver cómo ha cambiado este guión en los distintos cursos académicos.
